@@ -58,20 +58,20 @@
 <body class="bg-[#f8f9ff] text-slate-800 antialiased selection:bg-emerald-500 selection:text-white">
 
   <!-- 1. TOP UTILITY & ANNOUNCEMENT BAR -->
-  <aside class="bg-[#0a2540] text-slate-300 text-xs py-2 border-b border-white/10 relative z-50">
-    <div class="max-w-[1320px] mx-auto px-4 sm:px-6 flex flex-wrap items-center justify-between gap-3">
-      <div class="flex items-center gap-2 overflow-hidden text-ellipsis whitespace-nowrap">
-        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 text-[10px] font-bold uppercase tracking-wider border border-emerald-500/30">
+  <aside class="bg-[#0a2540] text-slate-300 text-xs py-1.5 sm:py-2 border-b border-white/10 relative z-50">
+    <div class="max-w-[1320px] mx-auto px-4 sm:px-6 flex items-center justify-between gap-3 text-[11px] sm:text-xs">
+      <div class="flex items-center gap-2 overflow-hidden text-ellipsis whitespace-nowrap min-w-0">
+        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 text-[10px] font-bold uppercase tracking-wider border border-emerald-500/30 flex-shrink-0">
           <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
           <span data-bind="site.meaBadge">MEA Registered</span>
         </span>
-        <span class="text-slate-300 hidden md:inline">•</span>
-        <span class="text-slate-200 font-medium text-[11px] sm:text-xs">
-          Direct Embassy Attested Work Visas for Europe & Gulf Countries
+        <span class="text-slate-400 hidden sm:inline">•</span>
+        <span class="text-slate-200 font-medium truncate">
+          Direct Embassy Attested Work Visas for Europe &amp; Gulf Countries
         </span>
       </div>
-      <div class="flex items-center gap-4 text-[11px]">
-        <div class="hidden sm:flex items-center gap-3">
+      <div class="flex items-center gap-3 sm:gap-4 flex-shrink-0">
+        <div class="hidden lg:flex items-center gap-3 text-slate-300">
           <span class="text-slate-400">Dubai HQ:</span>
           <a href="tel:+9714000000" data-bind-href="contacts.dubaiOffice.phoneRaw" data-prefix="tel:" class="text-slate-200 hover:text-white font-semibold transition-colors">
             <span data-bind="contacts.dubaiOffice.phone">+971 4 000 0000</span>
@@ -82,9 +82,10 @@
             <span data-bind="contacts.vizagOffice.phone">+91 891 000 0000</span>
           </a>
         </div>
-        <a href="https://wa.me/919100000000" data-bind-wa="default" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-emerald-400 hover:text-emerald-300 font-bold transition-colors">
+        <a href="https://wa.me/919100000000" data-bind-wa="default" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-emerald-400 hover:text-emerald-300 font-bold transition-colors">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
           <span class="material-symbols-outlined text-[14px]">chat</span>
-          <span>WhatsApp Active</span>
+          <span class="hidden sm:inline">WhatsApp Active</span>
         </a>
       </div>
     </div>
@@ -92,86 +93,149 @@
 
   <!-- 2. MAIN NAVIGATION HEADER -->
   <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm transition-all">
-    <div class="max-w-[1320px] mx-auto px-4 sm:px-6 h-20 flex items-center justify-between gap-4">
+    <div class="max-w-[1320px] mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between gap-3 lg:gap-4">
       
       <!-- Brand / Logo Area -->
-      <div class="flex items-center gap-4 py-1.5">
-        <a href="#hero" class="flex items-center gap-3.5 group select-none">
-          <img alt="1991 Group of Companies Logo" class="h-12 w-auto object-contain block group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLWKOVuvXdEYtj8knT3dh-jkOItQSWQ4zB-VCt7iqMPLtUSXosToOYq1ct7SmTeU_FM2QZco-9v48Mts2bfZYkAyA6NqBfMnmZPYzt3aMDp7GZkW6WfnGoOYOUynh80xHqSoAAFQgHH7V7v2Z6AjEZejfC8Xkm5RiamqRcabqz6nvPJN844La8gq2gvdDkcTMYlJEhIWxLWCO667OdHXcXi55o05tQor8YPdYgZ9m5bd-urZk-C6naOqaiaX06XGr7tw0">
-          <div class="hidden sm:block h-8 w-px bg-slate-200/90"></div>
+      <div class="flex items-center gap-2.5 sm:gap-4 py-1.5 flex-shrink-0">
+        <a href="#hero" class="flex items-center gap-2.5 sm:gap-3.5 group select-none">
+          <img alt="1991 Group of Companies Logo" class="h-9 sm:h-12 w-auto object-contain block group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLWKOVuvXdEYtj8knT3dh-jkOItQSWQ4zB-VCt7iqMPLtUSXosToOYq1ct7SmTeU_FM2QZco-9v48Mts2bfZYkAyA6NqBfMnmZPYzt3aMDp7GZkW6WfnGoOYOUynh80xHqSoAAFQgHH7V7v2Z6AjEZejfC8Xkm5RiamqRcabqz6nvPJN844La8gq2gvdDkcTMYlJEhIWxLWCO667OdHXcXi55o05tQor8YPdYgZ9m5bd-urZk-C6naOqaiaX06XGr7tw0">
+          <div class="hidden sm:block h-7 sm:h-8 w-px bg-slate-200/90"></div>
           <div class="flex flex-col justify-center">
-            <div class="flex items-center gap-2">
-              <span class="font-extrabold tracking-tight text-slate-900 text-base sm:text-lg group-hover:text-emerald-600 transition-colors" data-bind="site.brandShort">1991 GROUP</span>
-              <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 text-[10px] font-bold tracking-wide uppercase">
+            <div class="flex items-center gap-1.5 sm:gap-2">
+              <span class="font-extrabold tracking-tight text-slate-900 text-sm sm:text-base lg:text-lg group-hover:text-emerald-600 transition-colors" data-bind="site.brandShort">1991 GROUP</span>
+              <span class="inline-flex items-center gap-1 px-1.5 sm:px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 text-[9px] sm:text-[10px] font-bold tracking-wide uppercase">
                 <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
                 <span data-bind="site.meaBadge">MEA Registered</span>
               </span>
             </div>
-            <span class="text-[11px] text-slate-500 font-medium tracking-wide" data-bind="site.tagline">Overseas Recruitment &amp; Global Mobility</span>
+            <span class="hidden md:block text-[11px] text-slate-500 font-medium tracking-wide truncate max-w-[200px] lg:max-w-none" data-bind="site.tagline">Overseas Recruitment &amp; Global Mobility</span>
           </div>
         </a>
       </div>
 
-      <!-- Desktop Nav Links -->
-      <nav class="hidden xl:flex items-center gap-1 px-3 py-1.5 rounded-full bg-slate-100/90 border border-slate-200/90 text-[13px] font-semibold text-slate-600 shadow-sm">
-        <a href="#hero" class="px-3.5 py-1.5 rounded-full text-slate-900 bg-white shadow-sm hover:text-emerald-600 transition-all">Home</a>
-        <a href="#corridors" class="px-3 py-1.5 rounded-full hover:bg-white hover:text-emerald-600 transition-all flex items-center gap-1.5">
+      <!-- Desktop Nav Links (Streamlined to prevent collision on laptops and standard displays) -->
+      <nav class="hidden xl:flex items-center gap-0.5 px-3 py-1.5 rounded-full bg-slate-100/90 border border-slate-200/90 text-xs font-semibold text-slate-600 shadow-sm flex-shrink-0">
+        <a href="#hero" class="px-3 py-1.5 rounded-full text-slate-900 bg-white shadow-sm hover:text-emerald-600 transition-all">Home</a>
+        <a href="#corridors" class="px-2.5 py-1.5 rounded-full hover:bg-white hover:text-emerald-600 transition-all flex items-center gap-1">
           Corridors
           <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping"></span>
         </a>
-        <a href="#open-categories" class="px-3 py-1.5 rounded-full hover:bg-white hover:text-emerald-600 transition-all">Job Roles</a>
-        <a href="#placement-roadmap" class="px-3 py-1.5 rounded-full hover:bg-white hover:text-emerald-600 transition-all">4-Step Process</a>
-        <a href="#candidate-gallery" class="px-3 py-1.5 rounded-full hover:bg-white hover:text-emerald-600 transition-all">Success Gallery</a>
-        <a href="#leadership" class="px-3 py-1.5 rounded-full hover:bg-white hover:text-emerald-600 transition-all">Leadership</a>
-        <a href="#faqs" class="px-3 py-1.5 rounded-full hover:bg-white hover:text-emerald-600 transition-all">FAQs</a>
-        <a href="#offices" class="px-3 py-1.5 rounded-full hover:bg-white hover:text-emerald-600 transition-all">Offices</a>
+        <a href="#open-categories" class="px-2.5 py-1.5 rounded-full hover:bg-white hover:text-emerald-600 transition-all">Job Roles</a>
+        <a href="#placement-roadmap" class="px-2.5 py-1.5 rounded-full hover:bg-white hover:text-emerald-600 transition-all">Process</a>
+        <a href="#candidate-gallery" class="px-2.5 py-1.5 rounded-full hover:bg-white hover:text-emerald-600 transition-all">Gallery</a>
+        <a href="#leadership" class="px-2.5 py-1.5 rounded-full hover:bg-white hover:text-emerald-600 transition-all">Leadership</a>
+        <a href="#offices" class="px-2.5 py-1.5 rounded-full hover:bg-white hover:text-emerald-600 transition-all">Offices</a>
       </nav>
 
       <!-- Call to Action Desk & Direct Links -->
-      <div class="flex items-center gap-2 sm:gap-3">
-        <a class="hidden md:inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-50 hover:bg-emerald-50 text-slate-700 hover:text-emerald-700 border border-slate-200 hover:border-emerald-300 text-xs font-bold transition-all shadow-sm" href="https://wa.me/919100000000" data-bind-wa="default" target="_blank" rel="noopener noreferrer">
+      <div class="flex items-center gap-1.5 sm:gap-2.5 flex-shrink-0">
+        <!-- WhatsApp Desk Button (Compact on mobile, pill on sm+) -->
+        <a class="inline-flex items-center justify-center gap-1.5 p-2 sm:px-3 sm:py-2 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-200 hover:border-emerald-300 text-xs font-bold transition-all shadow-sm flex-shrink-0" href="https://wa.me/919100000000" data-bind-wa="default" target="_blank" rel="noopener noreferrer" title="WhatsApp Placement Desk">
           <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
           <span class="material-symbols-outlined text-[17px] text-emerald-600">chat</span>
-          <span>WhatsApp Desk</span>
+          <span class="hidden sm:inline">WhatsApp Desk</span>
         </a>
-        <button onclick="openApplyModal('Direct Inquiry', 'Global Corridors')" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs shadow-sm transition-all">
+
+        <!-- Register Now Button (sm and above) -->
+        <button onclick="openApplyModal('Direct Inquiry', 'Global Corridors')" class="hidden sm:inline-flex items-center gap-1.5 px-3.5 sm:px-4 py-2 rounded-xl bg-slate-900 hover:bg-emerald-600 text-white font-bold text-xs shadow-sm transition-all flex-shrink-0">
           <span class="material-symbols-outlined text-[16px]">how_to_reg</span>
           <span>Register Now</span>
         </button>
 
         <!-- Mobile Menu Toggle Button -->
-        <button id="mobile-menu-btn" class="xl:hidden p-2 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none" aria-label="Toggle Menu">
+        <button id="mobile-menu-btn" class="xl:hidden p-2 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none transition-colors flex items-center justify-center flex-shrink-0" aria-label="Open Navigation Menu">
           <span class="material-symbols-outlined text-2xl">menu</span>
         </button>
       </div>
     </div>
+  </header>
 
-    <!-- Mobile Slide-Down Navigation Menu -->
-    <div id="mobile-menu" class="hidden xl:hidden bg-white border-b border-slate-200 px-6 py-5 shadow-xl transition-all">
-      <div class="flex items-center justify-between pb-3 border-b border-slate-100 mb-3">
-        <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Navigation Menu</span>
-        <button id="mobile-menu-close" class="text-slate-400 hover:text-slate-700 p-1">
-          <span class="material-symbols-outlined text-xl">close</span>
+  <!-- Slide-In Mobile Navigation Drawer with Backdrop -->
+  <div id="mobile-menu" class="drawer-backdrop hidden fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm xl:hidden">
+    <div class="drawer-panel fixed top-0 right-0 bottom-0 w-full max-w-xs sm:max-w-sm bg-white shadow-2xl p-6 flex flex-col justify-between overflow-y-auto">
+      <div>
+        <!-- Drawer Header -->
+        <div class="flex items-center justify-between pb-4 border-b border-slate-100 mb-5">
+          <div class="flex items-center gap-2.5">
+            <span class="font-extrabold tracking-tight text-slate-900 text-base" data-bind="site.brandShort">1991 GROUP</span>
+            <span class="px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 text-[10px] font-bold uppercase">
+              MEA Registered
+            </span>
+          </div>
+          <button id="mobile-menu-close" class="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center justify-center transition-colors" aria-label="Close Menu">
+            <span class="material-symbols-outlined text-xl">close</span>
+          </button>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="flex flex-col space-y-1 text-sm font-semibold text-slate-700">
+          <a href="#hero" class="p-2.5 rounded-xl hover:bg-slate-50 hover:text-emerald-600 transition-colors flex items-center justify-between">
+            <span class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-slate-400 text-lg">home</span> Home
+            </span>
+            <span class="material-symbols-outlined text-xs text-slate-400">chevron_right</span>
+          </a>
+          <a href="#corridors" class="p-2.5 rounded-xl hover:bg-slate-50 hover:text-emerald-600 transition-colors flex items-center justify-between">
+            <span class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-slate-400 text-lg">public</span> Target Corridors
+            </span>
+            <span class="material-symbols-outlined text-xs text-slate-400">chevron_right</span>
+          </a>
+          <a href="#open-categories" class="p-2.5 rounded-xl hover:bg-slate-50 hover:text-emerald-600 transition-colors flex items-center justify-between">
+            <span class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-slate-400 text-lg">work</span> Open Job Roles
+            </span>
+            <span class="material-symbols-outlined text-xs text-slate-400">chevron_right</span>
+          </a>
+          <a href="#placement-roadmap" class="p-2.5 rounded-xl hover:bg-slate-50 hover:text-emerald-600 transition-colors flex items-center justify-between">
+            <span class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-slate-400 text-lg">timeline</span> 4-Step Process
+            </span>
+            <span class="material-symbols-outlined text-xs text-slate-400">chevron_right</span>
+          </a>
+          <a href="#candidate-gallery" class="p-2.5 rounded-xl hover:bg-slate-50 hover:text-emerald-600 transition-colors flex items-center justify-between">
+            <span class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-slate-400 text-lg">photo_library</span> Success Gallery
+            </span>
+            <span class="material-symbols-outlined text-xs text-slate-400">chevron_right</span>
+          </a>
+          <a href="#leadership" class="p-2.5 rounded-xl hover:bg-slate-50 hover:text-emerald-600 transition-colors flex items-center justify-between">
+            <span class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-slate-400 text-lg">badge</span> Leadership
+            </span>
+            <span class="material-symbols-outlined text-xs text-slate-400">chevron_right</span>
+          </a>
+          <a href="#faqs" class="p-2.5 rounded-xl hover:bg-slate-50 hover:text-emerald-600 transition-colors flex items-center justify-between">
+            <span class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-slate-400 text-lg">help</span> Candidate FAQs
+            </span>
+            <span class="material-symbols-outlined text-xs text-slate-400">chevron_right</span>
+          </a>
+          <a href="#offices" class="p-2.5 rounded-xl hover:bg-slate-50 hover:text-emerald-600 transition-colors flex items-center justify-between">
+            <span class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-slate-400 text-lg">apartment</span> Office Locations
+            </span>
+            <span class="material-symbols-outlined text-xs text-slate-400">chevron_right</span>
+          </a>
+        </nav>
+      </div>
+
+      <!-- Quick Action Desk in Mobile Drawer -->
+      <div class="pt-5 border-t border-slate-100 space-y-2.5">
+        <button onclick="openApplyModal('Direct Application Desk', 'Global Corridors'); document.getElementById('mobile-menu').classList.add('hidden');" class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-slate-900 text-white font-bold text-xs shadow-md">
+          <span class="material-symbols-outlined text-base">how_to_reg</span>
+          <span>Register Candidate Profile</span>
         </button>
-      </div>
-      <div class="flex flex-col space-y-3 font-semibold text-sm text-slate-700">
-        <a href="#hero" class="hover:text-emerald-600 py-1 flex items-center justify-between">Home <span class="material-symbols-outlined text-sm">chevron_right</span></a>
-        <a href="#corridors" class="hover:text-emerald-600 py-1 flex items-center justify-between">Target Corridors <span class="material-symbols-outlined text-sm">chevron_right</span></a>
-        <a href="#open-categories" class="hover:text-emerald-600 py-1 flex items-center justify-between">Open Job Categories <span class="material-symbols-outlined text-sm">chevron_right</span></a>
-        <a href="#placement-roadmap" class="hover:text-emerald-600 py-1 flex items-center justify-between">4-Step Process <span class="material-symbols-outlined text-sm">chevron_right</span></a>
-        <a href="#candidate-gallery" class="hover:text-emerald-600 py-1 flex items-center justify-between">Success Gallery <span class="material-symbols-outlined text-sm">chevron_right</span></a>
-        <a href="#leadership" class="hover:text-emerald-600 py-1 flex items-center justify-between">Leadership <span class="material-symbols-outlined text-sm">chevron_right</span></a>
-        <a href="#faqs" class="hover:text-emerald-600 py-1 flex items-center justify-between">Candidate FAQs <span class="material-symbols-outlined text-sm">chevron_right</span></a>
-        <a href="#offices" class="hover:text-emerald-600 py-1 flex items-center justify-between">Office Locations <span class="material-symbols-outlined text-sm">chevron_right</span></a>
-      </div>
-      <div class="pt-4 mt-4 border-t border-slate-100 flex flex-col gap-2">
-        <a href="https://wa.me/919100000000" data-bind-wa="default" target="_blank" class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-600 text-white font-bold text-xs shadow-sm">
+        <a href="https://wa.me/919100000000" data-bind-wa="default" target="_blank" class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs shadow-md transition-all">
           <span class="material-symbols-outlined text-base">chat</span>
-          <span>Chat on WhatsApp Desk</span>
+          <span>WhatsApp Placement Desk</span>
         </a>
+        <div class="pt-2 text-center text-[11px] text-slate-400">
+          Dubai HQ &amp; Vizag India Operations
+        </div>
       </div>
     </div>
-  </header>
+  </div>
 
   <!-- 3. HERO SECTION -->
   <section class="relative overflow-hidden bg-gradient-to-b from-[#eef4ff] via-[#f8f9ff] to-white pt-10 pb-16 lg:pt-16 lg:pb-20 border-b border-slate-200" id="hero">
@@ -183,7 +247,7 @@
     <div class="max-w-[1320px] mx-auto px-4 sm:px-6 relative z-10">
       
       <!-- Europe Urgent Hiring Banner -->
-      <div class="inline-flex flex-wrap items-center gap-2 sm:gap-3 px-4 py-2 rounded-full bg-white border border-emerald-200 shadow-sm mb-6">
+      <div class="inline-flex flex-wrap items-center gap-2 sm:gap-3 px-3.5 py-2 sm:px-4 rounded-2xl sm:rounded-full bg-white border border-emerald-200 shadow-sm mb-6 max-w-full">
         <span class="flex h-2.5 w-2.5 relative">
           <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
           <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-600"></span>
@@ -426,7 +490,7 @@
       <!-- Interactive Search & Category Filter Toolbar -->
       <div class="bg-slate-50 border border-slate-200 p-4 sm:p-5 rounded-2xl mb-10 shadow-sm flex flex-col md:flex-row items-center justify-between gap-4">
         <!-- Filter Pills -->
-        <div class="flex flex-wrap items-center gap-2 w-full md:w-auto">
+        <div class="flex items-center gap-2 w-full md:w-auto overflow-x-auto no-scrollbar pb-1 md:pb-0 flex-nowrap sm:flex-wrap">
           <button class="filter-btn active px-4 py-2 rounded-xl text-xs font-bold border border-slate-200 bg-white text-slate-700 hover:border-slate-400 transition-all" data-filter="all">
             All Openings
           </button>

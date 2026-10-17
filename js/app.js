@@ -573,23 +573,65 @@ function setupEventListeners() {
   const mobileMenu = document.getElementById('mobile-menu');
   const mobileMenuClose = document.getElementById('mobile-menu-close');
 
-  if (mobileMenuBtn && mobileMenu) {
-    mobileMenuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
+  const openMobileMenu = () => {
+    if (mobileMenu) {
+      mobileMenu.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+  };
+
+  const closeMobileMenu = () => {
+    if (mobileMenu) {
+      mobileMenu.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+  };
+
+  if (mobileMenuBtn) {
+    mobileMenuBtn.addEventListener('click', openMobileMenu);
   }
 
-  if (mobileMenuClose && mobileMenu) {
-    mobileMenuClose.addEventListener('click', () => {
-      mobileMenu.classList.add('hidden');
+  if (mobileMenuClose) {
+    mobileMenuClose.addEventListener('click', closeMobileMenu);
+  }
+
+  // Close mobile drawer when clicking the backdrop
+  if (mobileMenu) {
+    mobileMenu.addEventListener('click', (e) => {
+      if (e.target === mobileMenu) {
+        closeMobileMenu();
+      }
     });
   }
 
   // Close mobile menu when clicking nav links
   document.querySelectorAll('#mobile-menu a').forEach(link => {
-    link.addEventListener('click', () => {
-      if (mobileMenu) mobileMenu.classList.add('hidden');
+    link.addEventListener('click', closeMobileMenu);
+  });
+
+  // Modal backdrop click dismiss
+  const applyModal = document.getElementById('apply-modal');
+  if (applyModal) {
+    applyModal.addEventListener('click', (e) => {
+      if (e.target === applyModal) {
+        closeApplyModal();
+      }
     });
+  }
+
+  // Global Escape key handler to close drawer or modal
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeMobileMenu();
+      closeApplyModal();
+    }
+  });
+
+  // Automatically close mobile menu if resized to desktop viewport
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 1280) {
+      closeMobileMenu();
+    }
   });
 
   // Scroll to top button visibility
