@@ -10,8 +10,8 @@
     "footerLogoUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuBxO5wbCDYJhOjcBFrylFBapYN4wBcVdorfNIsyOeTUAUCzDarzrb8TC7-LyHIbLZDijk0xqui2y0w13fPlyOTDClF9E2VN2eU3tv2lZ6EUMbyi8nMxvHf5uGhaR8me-W22SgXXBBQsLFkxv1t0mepHEFam2oN1hB78weJxDERaRvUd6rDCGX6uW_AnmLchQbyYMOmqF9fjZugIkCbvBwVNHfNlKRMwUZj9RanIIE-teolSAGAgQeRCKsfF8Lzi7BQM62g"
   },
   "contacts": {
-    "primaryWhatsApp": "+91 91000 00000",
-    "primaryWhatsAppRaw": "919100000000",
+    "primaryWhatsApp": "+91 83413 01490",
+    "primaryWhatsAppRaw": "918341301490",
     "defaultWhatsAppMessage": "Hello 1991 Group, I am inquiring about overseas job vacancies.",
     "dubaiOffice": {
       "title": "Dubai Corporate HQ (UAE)",
@@ -19,23 +19,23 @@
       "address": "Al Noor 3, 3rd Floor, Al Mankhool, Bur Dubai, Dubai, United Arab Emirates",
       "phone": "+971 4 000 0000",
       "phoneRaw": "+9714000000",
-      "whatsapp": "+971 50 000 0000",
-      "whatsappRaw": "971500000000",
+      "whatsapp": "+91 83413 01490",
+      "whatsappRaw": "918341301490",
       "hours": "Mon - Sat: 9:00 AM - 7:00 PM GST"
     },
     "vizagOffice": {
       "title": "Vizag Operations HQ (India)",
       "badge": "MEA Registered",
       "address": "Near Lorven Hotel, Health City, Arilova, Visakhapatnam (Vizag), Andhra Pradesh - 530040, India",
-      "phone": "+91 891 000 0000",
-      "phoneRaw": "+918910000000",
-      "verificationCell": "+91 90000 00000",
-      "verificationCellRaw": "919000000000",
+      "phone": "+91 83413 01490",
+      "phoneRaw": "+918341301490",
+      "verificationCell": "+91 83413 01490",
+      "verificationCellRaw": "918341301490",
       "hours": "Mon - Sat: 9:30 AM - 6:30 PM IST"
     },
     "emails": {
-      "apply": "apply@1991group.com",
-      "info": "info@1991group.com"
+      "apply": "1991groups@gmail.com",
+      "info": "Bodeepallikishan@gmail.com"
     },
     "social": {
       "instagramDirector": {
@@ -471,12 +471,12 @@
       "title": "Marketing Manager & Candidate Relations",
       "badge": "CANDIDATE RELATIONS HEAD",
       "bio": "Directs transparent candidate outreach, onboarding counseling, documentation verification, and post-placement welfare assistance across India operations.",
-      "tags": ["Vizag Operations HQ", "24/7 Welfare Cell"],
+      "tags": ["Vizag Operations HQ", "Direct Desk: +91 77801177"],
       "photo": "https://lh3.googleusercontent.com/aida-public/AB6AXuBclunnm2yGHjRlx5xf0qywjWJXsogN5xdrFIX877UUvwB2xUFXzRE0jBrFPpVvQTxoDnzoUTuGyM31hFN8OwJ_whV9YVHQChMdHgKWZy-rbc3MqML4Z8x1e_vFiycqc0lOrvocKc_HnGm84FwShz5yeuwqLnTWfow2SCTXSa3Bq7KMZBc_AZM95qB7JHawyBoGXnxP7pcYg4W_bW4_DVMAPFlU5jGXgMMgS8wscCHrJ6fPOVlcJ-BXcKiNiqs0lFPY6wg",
       "action": {
         "type": "whatsapp",
-        "label": "Candidate Welfare Desk",
-        "number": "918910000000",
+        "label": "WhatsApp: +91 77801177",
+        "number": "9177801177",
         "message": "Hello Priyanka, I would like guidance regarding overseas vacancies",
         "icon": "chat"
       }

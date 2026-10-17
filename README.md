@@ -40,32 +40,32 @@ Simply edit `data/content.json`:
 Open `data/content.json` and look for the `"contacts"` section:
 ```json
 "contacts": {
-  "primaryWhatsApp": "+91 91000 00000",
-  "primaryWhatsAppRaw": "919100000000",
+  "primaryWhatsApp": "+91 83413 01490",
+  "primaryWhatsAppRaw": "918341301490",
   "defaultWhatsAppMessage": "Hello 1991 Group, I am inquiring about overseas job vacancies.",
   "dubaiOffice": {
     "phone": "+971 4 000 0000",
     "phoneRaw": "+9714000000",
-    "whatsapp": "+971 50 000 0000",
-    "whatsappRaw": "971500000000"
+    "whatsapp": "+91 83413 01490",
+    "whatsappRaw": "918341301490"
   },
   "vizagOffice": {
-    "phone": "+91 891 000 0000",
-    "phoneRaw": "+918910000000",
-    "verificationCell": "+91 90000 00000",
-    "verificationCellRaw": "919000000000"
+    "phone": "+91 83413 01490",
+    "phoneRaw": "+918341301490",
+    "verificationCell": "+91 83413 01490",
+    "verificationCellRaw": "918341301490"
   }
 }
 ```
 > **Note:**
-> - `phone` / `whatsapp`: The formatted number shown to visitors on the website (e.g. `+91 91000 00000`).
+> - `phone` / `whatsapp`: The formatted number shown to visitors on the website (e.g. `+91 83413 01490`).
 > - `phoneRaw` / `whatsappRaw`: Digits only (with country code, no spaces or special symbols) used for direct click-to-call `tel:` and click-to-chat `wa.me/` links.
 
 ### 2. Update Email Addresses & Social Links
 ```json
 "emails": {
-  "apply": "apply@1991group.com",
-  "info": "info@1991group.com"
+  "apply": "1991groups@gmail.com",
+  "info": "Bodeepallikishan@gmail.com"
 },
 "social": {
   "instagramDirector": {

@@ -17,8 +17,8 @@ const FALLBACK_DATA = {
     footerLogoUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuBxO5wbCDYJhOjcBFrylFBapYN4wBcVdorfNIsyOeTUAUCzDarzrb8TC7-LyHIbLZDijk0xqui2y0w13fPlyOTDClF9E2VN2eU3tv2lZ6EUMbyi8nMxvHf5uGhaR8me-W22SgXXBBQsLFkxv1t0mepHEFam2oN1hB78weJxDERaRvUd6rDCGX6uW_AnmLchQbyYMOmqF9fjZugIkCbvBwVNHfNlKRMwUZj9RanIIE-teolSAGAgQeRCKsfF8Lzi7BQM62g"
   },
   contacts: {
-    primaryWhatsApp: "+91 91000 00000",
-    primaryWhatsAppRaw: "919100000000",
+    primaryWhatsApp: "+91 83413 01490",
+    primaryWhatsAppRaw: "918341301490",
     defaultWhatsAppMessage: "Hello 1991 Group, I am inquiring about overseas job vacancies.",
     dubaiOffice: {
       title: "Dubai Corporate HQ (UAE)",
@@ -26,23 +26,23 @@ const FALLBACK_DATA = {
       address: "Al Noor 3, 3rd Floor, Al Mankhool, Bur Dubai, Dubai, United Arab Emirates",
       phone: "+971 4 000 0000",
       phoneRaw: "+9714000000",
-      whatsapp: "+971 50 000 0000",
-      whatsappRaw: "971500000000",
+      whatsapp: "+91 83413 01490",
+      whatsappRaw: "918341301490",
       hours: "Mon - Sat: 9:00 AM - 7:00 PM GST"
     },
     vizagOffice: {
       title: "Vizag Operations HQ (India)",
       badge: "MEA Registered",
       address: "Near Lorven Hotel, Health City, Arilova, Visakhapatnam (Vizag), Andhra Pradesh - 530040, India",
-      phone: "+91 891 000 0000",
-      phoneRaw: "+918910000000",
-      verificationCell: "+91 90000 00000",
-      verificationCellRaw: "919000000000",
+      phone: "+91 83413 01490",
+      phoneRaw: "+918341301490",
+      verificationCell: "+91 83413 01490",
+      verificationCellRaw: "918341301490",
       hours: "Mon - Sat: 9:30 AM - 6:30 PM IST"
     },
     emails: {
-      apply: "apply@1991group.com",
-      info: "info@1991group.com"
+      apply: "1991groups@gmail.com",
+      info: "Bodeepallikishan@gmail.com"
     },
     social: {
       instagramDirector: {
@@ -146,7 +146,7 @@ function bindStaticContent() {
   // WhatsApp quick links with custom context
   document.querySelectorAll('[data-bind-wa]').forEach(el => {
     const context = el.getAttribute('data-bind-wa');
-    let phone = data.contacts?.primaryWhatsAppRaw || "919100000000";
+    let phone = data.contacts?.primaryWhatsAppRaw || "918341301490";
     let message = data.contacts?.defaultWhatsAppMessage || "Hello 1991 Group, I am inquiring about overseas job vacancies.";
 
     if (context === 'dubai') {
@@ -691,7 +691,7 @@ function closeApplyModal() {
 // One-click WhatsApp apply for a specific job
 function quickWhatsAppJob(encodedRole) {
   const role = decodeURIComponent(encodedRole);
-  const waNumber = appState.data.contacts?.primaryWhatsAppRaw || '919100000000';
+  const waNumber = appState.data.contacts?.primaryWhatsAppRaw || '918341301490';
   const msg = `Hello 1991 Group Placement Desk,\nI am interested in applying for: *${role}*.\nPlease let me know the current quota status and documents required.`;
   window.open(`https://wa.me/${waNumber}?text=${encodeURIComponent(msg)}`, '_blank');
 }
@@ -705,7 +705,7 @@ function submitApplicationToWhatsApp() {
   const passport = document.getElementById('applicant-passport')?.value || 'Yes';
   const exp = document.getElementById('applicant-experience')?.value || 'Relevant';
 
-  const waNumber = appState.data.contacts?.primaryWhatsAppRaw || '919100000000';
+  const waNumber = appState.data.contacts?.primaryWhatsAppRaw || '918341301490';
 
   const dispatchText = 
 `*NEW CANDIDATE REGISTRATION - 1991 GROUP*
