@@ -1,10 +1,10 @@
 /**
  * 1991 Group of Companies - Dynamic Frontend & GitHub Pages Engine
- * Centralized data loading, dynamic DOM binding, interactive application modal,
- * and category filtering.
+ * Harmonized design tokens, dynamic DOM binding, interactive application modal,
+ * and live search/filter system.
  */
 
-// Embedded fallback data in case of strict local file:// CORS restrictions
+// Embedded fallback data ensuring zero broken states even on strict file:// protocols
 const FALLBACK_DATA = {
   site: {
     companyName: "1991 Group of Companies",
@@ -100,7 +100,6 @@ async function loadDynamicContent() {
     console.log("Successfully loaded dynamic content from data/content.json");
   } catch (error) {
     console.warn("Could not load data/content.json, using embedded fallback data:", error);
-    // Continue with fallback data
   }
   
   initializeUI();
@@ -144,7 +143,7 @@ function bindStaticContent() {
     }
   });
 
-  // WhatsApp quick links with custom text
+  // WhatsApp quick links with custom context
   document.querySelectorAll('[data-bind-wa]').forEach(el => {
     const context = el.getAttribute('data-bind-wa');
     let phone = data.contacts?.primaryWhatsAppRaw || "919100000000";
@@ -171,13 +170,13 @@ function bindStaticContent() {
   if (bannerText && data.announcement?.text) bannerText.textContent = data.announcement.text + ' ';
   if (bannerHighlight && data.announcement?.highlight) bannerHighlight.textContent = data.announcement.highlight;
 
-  // Update dynamic document title if provided
+  // Update dynamic document title
   if (data.site?.companyName) {
     document.title = `${data.site.companyName} | ${data.site.tagline || 'Overseas Recruitment'}`;
   }
 }
 
-// Render Migration Corridors Grid
+// Render Migration Corridors Grid with unified card heights and harmonious badges
 function renderCorridors() {
   const container = document.getElementById('corridors-container');
   if (!container) return;
@@ -186,13 +185,12 @@ function renderCorridors() {
   if (!corridors.length) return;
 
   container.innerHTML = corridors.map(c => `
-    <div class="relative rounded-3xl p-7 bg-white border ${c.id === 'europe' ? 'border-2 border-emerald-500 shadow-md' : 'border-slate-200'} hover:border-emerald-500 shadow-sm hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 flex flex-col justify-between group overflow-hidden">
-      ${c.id === 'europe' ? '<div class="absolute -right-12 -top-12 w-32 h-32 bg-emerald-500/10 rounded-full blur-2xl pointer-events-none"></div>' : ''}
+    <div class="relative rounded-3xl p-7 bg-white border border-slate-200 hover:border-emerald-500 shadow-sm hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 flex flex-col justify-between group overflow-hidden">
       <div>
         <!-- Card Header with Flag & Badge -->
         <div class="flex items-start justify-between gap-3 mb-4">
           <div class="flex items-center gap-3">
-            <div class="w-12 h-12 rounded-2xl bg-blue-50 border border-blue-200 flex items-center justify-center text-2xl shadow-sm flex-shrink-0 group-hover:scale-105 transition-transform">
+            <div class="w-12 h-12 rounded-2xl bg-slate-50 border border-slate-200 flex items-center justify-center text-2xl shadow-sm flex-shrink-0 group-hover:scale-105 transition-transform">
               ${c.flag || '🌍'}
             </div>
             <div>
@@ -204,20 +202,22 @@ function renderCorridors() {
               </span>
             </div>
           </div>
-          <span class="px-2.5 py-1 rounded-full ${c.id === 'europe' ? 'bg-emerald-600 text-white' : 'bg-slate-100 text-slate-700 border border-slate-200'} text-[10px] font-extrabold uppercase tracking-wide shadow-sm flex-shrink-0">
+          <span class="px-2.5 py-1 rounded-full ${c.badgeStyle || 'bg-slate-100 text-slate-700 border border-slate-200'} text-[10px] font-extrabold uppercase tracking-wide shadow-sm flex-shrink-0">
             ${c.badge || 'Verified'}
           </span>
         </div>
 
         <!-- Highlight Offer Banner -->
-        <div class="mb-4 p-3.5 rounded-2xl ${c.id === 'europe' ? 'bg-emerald-50 border border-emerald-200' : 'bg-slate-50 border border-slate-200/90'} text-xs">
-          <div class="flex items-center justify-between font-bold ${c.id === 'europe' ? 'text-emerald-900' : 'text-slate-900'} mb-1">
-            <span class="flex items-center gap-1">
+        <div class="mb-4 p-3.5 rounded-2xl bg-slate-50 border border-slate-200 text-xs">
+          <div class="flex items-center justify-between font-bold text-slate-900 mb-1">
+            <span class="flex items-center gap-1 text-slate-800">
               <span class="material-symbols-outlined text-[15px] text-emerald-600">trending_up</span> ${c.highlightTitle || 'Opportunity'}
             </span>
-            <span class="px-2 py-0.5 rounded ${c.id === 'europe' ? 'bg-emerald-200/80 text-emerald-800' : 'bg-cyan-50 text-cyan-800 border border-cyan-200'} text-[11px] font-extrabold">${c.highlightSalary || ''}</span>
+            <span class="px-2 py-0.5 rounded bg-emerald-50 text-emerald-800 border border-emerald-200 text-[11px] font-extrabold">
+              ${c.highlightSalary || ''}
+            </span>
           </div>
-          <p class="${c.id === 'europe' ? 'text-emerald-800 font-medium' : 'text-slate-600'}">
+          <p class="text-slate-600 leading-relaxed text-[11px]">
             ${c.highlightSub || ''}
           </p>
         </div>
@@ -231,13 +231,13 @@ function renderCorridors() {
         <!-- Country Chips -->
         <div class="flex flex-wrap gap-1.5 pt-3.5 border-t border-slate-100 mb-4">
           ${(c.countries || []).map(country => `
-            <span class="px-2.5 py-1 rounded-lg ${c.id === 'europe' ? 'bg-emerald-50 text-emerald-700 border border-emerald-200' : 'bg-slate-100 text-slate-700 border border-slate-200'} text-[11px] font-medium">${country}</span>
+            <span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 border border-slate-200 text-[11px] font-medium">${country}</span>
           `).join('')}
         </div>
         <button 
           onclick="filterJobsFromCorridor('${c.targetCategory || 'all'}')"
-          class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl ${c.id === 'europe' ? 'bg-emerald-600 hover:bg-emerald-500 text-white' : 'bg-slate-900 hover:bg-emerald-600 text-white'} font-bold text-xs shadow-sm transition-all">
-          <span>${c.buttonText || 'View Openings'}</span>
+          class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-emerald-600 text-white font-bold text-xs shadow-sm transition-all">
+          <span>${c.buttonText || 'Explore Vacancies'}</span>
           <span class="material-symbols-outlined text-sm">arrow_forward</span>
         </button>
       </div>
@@ -245,7 +245,7 @@ function renderCorridors() {
   `).join('');
 }
 
-// Render Job Roles & Categories Grid with live search & filter
+// Render Job Roles & Categories Grid with unified 3-color palette and standardized CTA
 function renderJobs() {
   const container = document.getElementById('jobs-container');
   if (!container) return;
@@ -283,16 +283,23 @@ function renderJobs() {
   }
 
   container.innerHTML = filteredJobs.map(job => {
-    // Icon color variants
+    // Standardized token themes: Europe = emerald, Gulf = cyan, Technical = amber
+    let themeBg = 'bg-emerald-50 text-emerald-700 border-emerald-200';
     let iconBg = 'bg-emerald-100 text-emerald-700';
-    if (job.iconColor === 'rose') iconBg = 'bg-rose-100 text-rose-700';
-    if (job.iconColor === 'cyan') iconBg = 'bg-cyan-100 text-cyan-700';
-    if (job.iconColor === 'amber') iconBg = 'bg-amber-100 text-amber-700';
-    if (job.iconColor === 'indigo') iconBg = 'bg-indigo-100 text-indigo-700';
-    if (job.iconColor === 'teal') iconBg = 'bg-teal-100 text-teal-700';
-    if (job.iconColor === 'sky') iconBg = 'bg-sky-100 text-sky-700';
-    if (job.iconColor === 'orange') iconBg = 'bg-orange-100 text-orange-700';
-    if (job.iconColor === 'blue') iconBg = 'bg-blue-100 text-blue-700';
+    let checkColor = 'text-emerald-600';
+    let badgeBg = 'bg-emerald-600 text-white';
+
+    if (job.colorTheme === 'cyan' || job.category === 'gulf') {
+      themeBg = 'bg-cyan-50 text-cyan-800 border-cyan-200';
+      iconBg = 'bg-cyan-100 text-cyan-700';
+      checkColor = 'text-cyan-600';
+      badgeBg = 'bg-cyan-700 text-white';
+    } else if (job.colorTheme === 'amber' || job.category === 'technical') {
+      themeBg = 'bg-amber-50 text-amber-800 border-amber-200';
+      iconBg = 'bg-amber-100 text-amber-700';
+      checkColor = 'text-amber-600';
+      badgeBg = 'bg-amber-600 text-white';
+    }
 
     return `
       <div class="rounded-2xl p-6 bg-slate-50 border border-slate-200 hover:border-emerald-500 hover:shadow-lg transition-all group flex flex-col justify-between">
@@ -301,7 +308,7 @@ function renderJobs() {
             <div class="w-12 h-12 rounded-xl ${iconBg} flex items-center justify-center group-hover:scale-105 transition-transform">
               <span class="material-symbols-outlined text-2xl">${job.icon || 'work'}</span>
             </div>
-            <span class="px-2.5 py-1 rounded-full bg-emerald-600 text-white text-[11px] font-extrabold tracking-wide">
+            <span class="px-2.5 py-1 rounded-full ${badgeBg} text-[11px] font-extrabold tracking-wide">
               ${job.badge || 'Verified'}
             </span>
           </div>
@@ -311,14 +318,14 @@ function renderJobs() {
           </h3>
           <p class="text-xs text-slate-500 mt-0.5 mb-2 font-medium">Corridors: ${job.corridors}</p>
 
-          <div class="mb-4 px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-800 font-bold text-xs border border-emerald-200">
+          <div class="mb-4 px-3 py-1.5 rounded-lg ${themeBg} font-bold text-xs border">
             ${job.salaryBanner || 'Employer Sponsored Work Visa & Lodging'}
           </div>
 
           <ul class="space-y-2 text-xs text-slate-600 pt-3 border-t border-slate-200">
             ${(job.features || []).map(feat => `
               <li class="flex items-center gap-2">
-                <span class="material-symbols-outlined text-emerald-600 text-base">check_circle</span>
+                <span class="material-symbols-outlined ${checkColor} text-base">check_circle</span>
                 <span>${feat}</span>
               </li>
             `).join('')}
@@ -335,7 +342,7 @@ function renderJobs() {
           <button 
             onclick="quickWhatsAppJob('${encodeURIComponent(job.title)}')"
             title="Instant WhatsApp Inquiry"
-            class="px-3 py-2.5 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200 transition-colors flex items-center justify-center">
+            class="px-3 py-2.5 rounded-xl bg-white hover:bg-emerald-50 text-emerald-700 border border-slate-200 hover:border-emerald-300 transition-colors flex items-center justify-center shadow-sm">
             <span class="material-symbols-outlined text-base">chat</span>
           </button>
         </div>
@@ -344,7 +351,7 @@ function renderJobs() {
   }).join('');
 }
 
-// Render Leadership Profiles
+// Render Leadership Profiles with symmetrical badges and balanced CTAs
 function renderLeadership() {
   const container = document.getElementById('leadership-container');
   if (!container) return;
@@ -352,44 +359,39 @@ function renderLeadership() {
   const leaders = appState.data.leadership || [];
   if (!leaders.length) return;
 
-  container.innerHTML = leaders.map((leader, idx) => {
-    const isPrimary = idx === 0;
-    const accentBorder = isPrimary ? 'border-emerald-500' : 'border-cyan-500';
-    const badgeColor = isPrimary ? 'bg-emerald-600' : 'bg-cyan-600';
-    const tagBg = isPrimary ? 'bg-emerald-100 text-emerald-800 border-emerald-300' : 'bg-cyan-100 text-cyan-800 border-cyan-300';
-
+  container.innerHTML = leaders.map((leader) => {
     let actionBtn = '';
-    if (leader.instagram) {
+    if (leader.action?.type === 'instagram') {
       actionBtn = `
-        <a class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-gradient-to-r from-pink-500 to-purple-600 text-white border border-pink-400 text-xs font-bold transition-all hover:shadow-md" href="${leader.instagram.url}" rel="noopener noreferrer" target="_blank">
-          <span class="material-symbols-outlined text-[16px]">photo_camera</span>
-          <span>${leader.instagram.handle}</span>
+        <a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white border border-slate-700 text-xs font-bold transition-all shadow-sm" href="${leader.action.url}" rel="noopener noreferrer" target="_blank">
+          <span class="material-symbols-outlined text-[16px] text-pink-400">photo_camera</span>
+          <span>${leader.action.label}</span>
         </a>
       `;
-    } else if (leader.whatsapp) {
-      const waNumber = leader.whatsapp.number || appState.data.contacts?.primaryWhatsAppRaw || '918910000000';
-      const msg = encodeURIComponent(leader.whatsapp.message || 'Hello Priyanka, I would like guidance regarding overseas vacancies');
+    } else if (leader.action?.type === 'whatsapp') {
+      const waNumber = leader.action.number || appState.data.contacts?.primaryWhatsAppRaw || '918910000000';
+      const msg = encodeURIComponent(leader.action.message || 'Hello, I would like guidance regarding overseas vacancies');
       actionBtn = `
-        <a class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-300 text-xs font-bold transition-all" href="https://wa.me/${waNumber}?text=${msg}" rel="noopener noreferrer" target="_blank">
+        <a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-all shadow-sm" href="https://wa.me/${waNumber}?text=${msg}" rel="noopener noreferrer" target="_blank">
           <span class="material-symbols-outlined text-[16px]">chat</span>
-          <span>${leader.whatsapp.label || 'Connect via WhatsApp'}</span>
+          <span>${leader.action.label}</span>
         </a>
       `;
     }
 
     return `
-      <div class="rounded-3xl p-6 sm:p-7 bg-slate-50 border border-slate-200 hover:${accentBorder} transition-all shadow-sm flex flex-col sm:flex-row gap-6 items-center sm:items-start group hover:shadow-xl">
+      <div class="rounded-3xl p-6 sm:p-7 bg-white border border-slate-200 hover:border-emerald-500 transition-all shadow-sm flex flex-col sm:flex-row gap-6 items-center sm:items-start group hover:shadow-xl">
         <div class="relative flex-shrink-0">
-          <div class="w-32 h-40 sm:w-36 sm:h-44 rounded-2xl overflow-hidden border-2 ${accentBorder} shadow-md group-hover:scale-105 transition-transform duration-300 bg-slate-200">
+          <div class="w-32 h-40 sm:w-36 sm:h-44 rounded-2xl overflow-hidden border-2 border-emerald-500 shadow-md group-hover:scale-105 transition-transform duration-300 bg-slate-100">
             <img alt="${leader.name}" class="w-full h-full object-cover object-top" src="${leader.photo}" loading="lazy">
           </div>
-          <span class="absolute -bottom-2 -right-2 px-2.5 py-0.5 rounded-md ${badgeColor} text-white font-extrabold text-[10px] uppercase tracking-wider shadow-sm">
-            ${leader.badge || 'VERIFIED'}
+          <span class="absolute -bottom-2 -right-2 px-2.5 py-0.5 rounded-md bg-emerald-600 text-white font-extrabold text-[9px] uppercase tracking-wider shadow-sm">
+            VERIFIED
           </span>
         </div>
         <div class="flex-1 text-center sm:text-left space-y-2">
           <div>
-            <span class="text-[11px] font-bold ${isPrimary ? 'text-cyan-700' : 'text-emerald-700'} uppercase tracking-wider block">${leader.title}</span>
+            <span class="text-[11px] font-bold text-emerald-700 uppercase tracking-wider block">${leader.title}</span>
             <h4 class="text-xl font-bold text-slate-900 mt-0.5">${leader.name}</h4>
             <p class="text-xs text-slate-600 leading-relaxed mt-2">
               ${leader.bio}
@@ -397,7 +399,7 @@ function renderLeadership() {
           </div>
           <div class="pt-2 flex flex-wrap gap-2 justify-center sm:justify-start">
             ${(leader.tags || []).map((t, i) => `
-              <span class="px-2.5 py-1 rounded-lg ${i === 0 ? 'bg-white border border-slate-200 text-slate-700' : tagBg} text-[11px] font-semibold">${t}</span>
+              <span class="px-2.5 py-1 rounded-lg ${i === 0 ? 'bg-slate-100 border border-slate-200 text-slate-700' : 'bg-emerald-50 text-emerald-800 border border-emerald-200'} text-[11px] font-semibold">${t}</span>
             `).join('')}
           </div>
           <div class="pt-3">
@@ -409,7 +411,7 @@ function renderLeadership() {
   }).join('');
 }
 
-// Render Candidate Gallery
+// Render Candidate Gallery with standardized visa and corridor chips
 function renderCandidateGallery() {
   const container = document.getElementById('gallery-container');
   if (!container) return;
@@ -417,25 +419,22 @@ function renderCandidateGallery() {
   const candidates = appState.data.candidateGallery || [];
   if (!candidates.length) return;
 
-  container.innerHTML = candidates.map((cand, idx) => {
-    const isCyan = idx === 1;
-    const accentClass = isCyan ? 'cyan' : 'emerald';
-
+  container.innerHTML = candidates.map((cand) => {
     return `
-      <div class="rounded-3xl bg-white border border-slate-200 hover:border-${accentClass}-500 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden group">
+      <div class="rounded-3xl bg-white border border-slate-200 hover:border-emerald-500 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden group">
         <div class="relative h-64 w-full overflow-hidden bg-slate-100">
           <img alt="${cand.name} - ${cand.role}" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" src="${cand.photo}" loading="lazy">
           <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-black/20"></div>
           <div class="absolute top-4 left-4 right-4 flex items-center justify-between gap-2">
-            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-${accentClass}-600 text-white text-[11px] font-extrabold tracking-wide shadow-md">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-600 text-white text-[11px] font-extrabold tracking-wide shadow-md">
               <span class="material-symbols-outlined text-[15px]">verified</span> Verified Placement
             </span>
             <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-white/90 backdrop-blur-md text-slate-900 text-[11px] font-semibold border border-white/40 shadow-sm">
-              <span class="material-symbols-outlined text-[14px] text-${accentClass}-600">location_on</span> ${cand.location}
+              <span class="material-symbols-outlined text-[14px] text-emerald-600">location_on</span> ${cand.location}
             </span>
           </div>
           <div class="absolute bottom-3 left-4">
-            <span class="px-2.5 py-1 rounded-lg bg-${accentClass}-600/90 backdrop-blur-md text-white border border-${accentClass}-400 text-[11px] font-bold">
+            <span class="px-2.5 py-1 rounded-lg bg-slate-900/90 backdrop-blur-md text-white border border-slate-700 text-[11px] font-bold">
               ${cand.badge || 'Legal Permit'}
             </span>
           </div>
@@ -443,12 +442,12 @@ function renderCandidateGallery() {
         <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
           <div>
             <div class="flex items-center justify-between gap-2 mb-1">
-              <h3 class="text-xl font-extrabold text-slate-900 group-hover:text-${accentClass}-600 transition-colors flex items-center gap-1.5">
+              <h3 class="text-xl font-extrabold text-slate-900 group-hover:text-emerald-600 transition-colors flex items-center gap-1.5">
                 ${cand.name} <span class="material-symbols-outlined text-emerald-600 text-[18px]">check_circle</span>
               </h3>
               <span class="text-[11px] font-bold text-slate-700 bg-slate-100 border border-slate-200 px-2.5 py-1 rounded-md">${cand.batch}</span>
             </div>
-            <p class="text-xs font-semibold text-${accentClass}-700">${cand.role}</p>
+            <p class="text-xs font-semibold text-emerald-700">${cand.role}</p>
             <div class="mt-4 p-4 rounded-2xl bg-slate-50 border border-slate-200 relative">
               <span class="material-symbols-outlined text-slate-300 text-2xl absolute top-3 right-3">format_quote</span>
               <p class="text-xs text-slate-700 leading-relaxed italic relative z-10 pr-6">
@@ -460,8 +459,8 @@ function renderCandidateGallery() {
             <span class="inline-flex items-center gap-1.5 text-slate-900 font-bold">
               <span class="material-symbols-outlined text-emerald-600 text-[18px]">task_alt</span> ${cand.permitType}
             </span>
-            <span class="text-${accentClass}-700 font-semibold flex items-center gap-1">
-              <span class="material-symbols-outlined text-[14px]">apartment</span> ${cand.corridor}
+            <span class="text-emerald-700 font-semibold flex items-center gap-1">
+              <span class="material-symbols-outlined text-[14px]">public</span> ${cand.corridor}
             </span>
           </div>
         </div>
