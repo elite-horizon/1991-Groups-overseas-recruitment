@@ -24,10 +24,10 @@ const FALLBACK_DATA = {
       title: "Dubai Corporate HQ (UAE)",
       badge: "MOHRE Compliant",
       address: "Al Noor 3, 3rd Floor, Al Mankhool, Bur Dubai, Dubai, United Arab Emirates",
-      phone: "+971 4 000 0000",
-      phoneRaw: "+9714000000",
-      whatsapp: "+91 83413 01490",
-      whatsappRaw: "918341301490",
+      phone: "+971 55 569 4504",
+      phoneRaw: "+971555694504",
+      whatsapp: "+971 55 569 4504",
+      whatsappRaw: "971555694504",
       hours: "Mon - Sat: 9:00 AM - 7:00 PM GST"
     },
     vizagOffice: {
@@ -369,7 +369,7 @@ function renderLeadership() {
         </a>
       `;
     } else if (leader.action?.type === 'whatsapp') {
-      const waNumber = leader.action.number || appState.data.contacts?.primaryWhatsAppRaw || '918910000000';
+      const waNumber = leader.action.number || appState.data.contacts?.primaryWhatsAppRaw || '918341301490';
       const msg = encodeURIComponent(leader.action.message || 'Hello, I would like guidance regarding overseas vacancies');
       actionBtn = `
         <a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-all shadow-sm" href="https://wa.me/${waNumber}?text=${msg}" rel="noopener noreferrer" target="_blank">

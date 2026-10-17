@@ -44,10 +44,10 @@ Open `data/content.json` and look for the `"contacts"` section:
   "primaryWhatsAppRaw": "918341301490",
   "defaultWhatsAppMessage": "Hello 1991 Group, I am inquiring about overseas job vacancies.",
   "dubaiOffice": {
-    "phone": "+971 4 000 0000",
-    "phoneRaw": "+9714000000",
-    "whatsapp": "+91 83413 01490",
-    "whatsappRaw": "918341301490"
+    "phone": "+971 55 569 4504",
+    "phoneRaw": "+971555694504",
+    "whatsapp": "+971 55 569 4504",
+    "whatsappRaw": "971555694504"
   },
   "vizagOffice": {
     "phone": "+91 83413 01490",
