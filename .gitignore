@@ -1,0 +1,20 @@
+# Secrets & Local Agent / MCP configurations
+.agents/
+mcp_config.json
+*.env
+*.env.local
+.env*
+
+# OS & Editor Files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Node / Scratch
+node_modules/
+dist/
+build/
+.cache/
