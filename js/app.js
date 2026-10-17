@@ -185,51 +185,51 @@ function renderCorridors() {
   if (!corridors.length) return;
 
   container.innerHTML = corridors.map(c => `
-    <div class="relative rounded-3xl p-7 bg-white border border-slate-200 hover:border-emerald-500 shadow-sm hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 flex flex-col justify-between group overflow-hidden">
+    <div class="relative rounded-3xl p-7 bg-white border border-slate-200 hover:border-emerald-500 shadow-sm hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 flex flex-col justify-between group overflow-hidden h-full">
       <div>
-        <!-- Card Header with Flag & Badge -->
-        <div class="flex items-start justify-between gap-3 mb-4">
-          <div class="flex items-center gap-3">
-            <div class="w-12 h-12 rounded-2xl bg-slate-50 border border-slate-200 flex items-center justify-center text-2xl shadow-sm flex-shrink-0 group-hover:scale-105 transition-transform">
-              ${c.flag || '🌍'}
-            </div>
-            <div>
-              <h3 class="text-lg font-bold text-slate-900 group-hover:text-emerald-600 transition-colors flex items-center gap-1.5">
-                ${c.title}
-              </h3>
-              <span class="text-[11px] font-semibold text-emerald-700 flex items-center gap-1">
-                <span class="material-symbols-outlined text-[14px]">verified</span> ${c.visaType || 'Work Permit'}
-              </span>
-            </div>
+        <!-- Top Row: Region Flag & High Demand / Status Badge -->
+        <div class="flex items-center justify-between mb-4">
+          <div class="w-12 h-12 rounded-2xl bg-slate-50 border border-slate-200 flex items-center justify-center text-2xl shadow-sm flex-shrink-0 group-hover:scale-105 transition-transform">
+            ${c.flag || '🌍'}
           </div>
-          <span class="px-2.5 py-1 rounded-full ${c.badgeStyle || 'bg-slate-100 text-slate-700 border border-slate-200'} text-[10px] font-extrabold uppercase tracking-wide shadow-sm flex-shrink-0">
+          <span class="px-3 py-1 rounded-full ${c.badgeStyle || 'bg-slate-100 text-slate-700 border border-slate-200'} text-[10px] font-extrabold uppercase tracking-wider shadow-sm flex-shrink-0">
             ${c.badge || 'Verified'}
           </span>
         </div>
 
+        <!-- Full-Width Title & Visa Clearance (Same remaining space for all cards) -->
+        <div class="mb-4">
+          <h3 class="text-xl font-bold text-slate-900 group-hover:text-emerald-600 transition-colors">
+            ${c.title}
+          </h3>
+          <span class="text-[11px] font-semibold text-emerald-700 flex items-center gap-1 mt-1">
+            <span class="material-symbols-outlined text-[15px]">verified</span> ${c.visaType || 'Work Permit'}
+          </span>
+        </div>
+
         <!-- Highlight Offer Banner -->
-        <div class="mb-4 p-3.5 rounded-2xl bg-slate-50 border border-slate-200 text-xs">
+        <div class="mb-4 p-3.5 rounded-2xl bg-slate-50 border border-slate-200 text-xs min-h-[82px] flex flex-col justify-center">
           <div class="flex items-center justify-between font-bold text-slate-900 mb-1">
             <span class="flex items-center gap-1 text-slate-800">
               <span class="material-symbols-outlined text-[15px] text-emerald-600">trending_up</span> ${c.highlightTitle || 'Opportunity'}
             </span>
-            <span class="px-2 py-0.5 rounded bg-emerald-50 text-emerald-800 border border-emerald-200 text-[11px] font-extrabold">
+            <span class="px-2 py-0.5 rounded bg-emerald-50 text-emerald-800 border border-emerald-200 text-[11px] font-extrabold flex-shrink-0">
               ${c.highlightSalary || ''}
             </span>
           </div>
-          <p class="text-slate-600 leading-relaxed text-[11px]">
+          <p class="text-slate-600 leading-relaxed text-[11px] line-clamp-2">
             ${c.highlightSub || ''}
           </p>
         </div>
 
-        <p class="text-xs text-slate-600 leading-relaxed mb-4">
+        <p class="text-xs text-slate-600 leading-relaxed mb-4 min-h-[50px] line-clamp-3">
           ${c.description}
         </p>
       </div>
 
       <div>
-        <!-- Country Chips -->
-        <div class="flex flex-wrap gap-1.5 pt-3.5 border-t border-slate-100 mb-4">
+        <!-- Country Chips (Consistent min-height for uniform alignment) -->
+        <div class="flex flex-wrap gap-1.5 pt-3.5 border-t border-slate-100 mb-4 min-h-[44px] items-center">
           ${(c.countries || []).map(country => `
             <span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 border border-slate-200 text-[11px] font-medium">${country}</span>
           `).join('')}
