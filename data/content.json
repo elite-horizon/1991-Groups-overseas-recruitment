@@ -1,0 +1,532 @@
+{
+  "site": {
+    "companyName": "1991 Group of Companies",
+    "brandShort": "1991 GROUP",
+    "tagline": "Overseas Recruitment & Global Mobility",
+    "meaBadge": "MEA Registered",
+    "mohreBadge": "UAE MOHRE Licensed",
+    "isoBadge": "ISO 9001:2015 Certified Agency",
+    "logoUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuDLWKOVuvXdEYtj8knT3dh-jkOItQSWQ4zB-VCt7iqMPLtUSXosToOYq1ct7SmTeU_FM2QZco-9v48Mts2bfZYkAyA6NqBfMnmZPYzt3aMDp7GZkW6WfnGoOYOUynh80xHqSoAAFQgHH7V7v2Z6AjEZejfC8Xkm5RiamqRcabqz6nvPJN844La8gq2gvdDkcTMYlJEhIWxLWCO667OdHXcXi55o05tQor8YPdYgZ9m5bd-urZk-C6naOqaiaX06XGr7tw0",
+    "footerLogoUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuBxO5wbCDYJhOjcBFrylFBapYN4wBcVdorfNIsyOeTUAUCzDarzrb8TC7-LyHIbLZDijk0xqui2y0w13fPlyOTDClF9E2VN2eU3tv2lZ6EUMbyi8nMxvHf5uGhaR8me-W22SgXXBBQsLFkxv1t0mepHEFam2oN1hB78weJxDERaRvUd6rDCGX6uW_AnmLchQbyYMOmqF9fjZugIkCbvBwVNHfNlKRMwUZj9RanIIE-teolSAGAgQeRCKsfF8Lzi7BQM62g"
+  },
+  "contacts": {
+    "primaryWhatsApp": "+91 91000 00000",
+    "primaryWhatsAppRaw": "919100000000",
+    "defaultWhatsAppMessage": "Hello 1991 Group, I am inquiring about overseas job vacancies.",
+    "dubaiOffice": {
+      "title": "Dubai Corporate HQ (UAE)",
+      "badge": "MOHRE Compliant",
+      "address": "Al Noor 3, 3rd Floor, Al Mankhool, Bur Dubai, Dubai, United Arab Emirates",
+      "phone": "+971 4 000 0000",
+      "phoneRaw": "+9714000000",
+      "whatsapp": "+971 50 000 0000",
+      "whatsappRaw": "971500000000",
+      "hours": "Mon - Sat: 9:00 AM - 7:00 PM GST"
+    },
+    "vizagOffice": {
+      "title": "Vizag Operations HQ (India)",
+      "badge": "MEA Registered",
+      "address": "Near Lorven Hotel, Health City, Arilova, Visakhapatnam (Vizag), Andhra Pradesh - 530040, India",
+      "phone": "+91 891 000 0000",
+      "phoneRaw": "+918910000000",
+      "verificationCell": "+91 90000 00000",
+      "verificationCellRaw": "919000000000",
+      "hours": "Mon - Sat: 9:30 AM - 6:30 PM IST"
+    },
+    "emails": {
+      "apply": "apply@1991group.com",
+      "info": "info@1991group.com"
+    },
+    "social": {
+      "instagramDirector": {
+        "handle": "@boddepalli.kittu",
+        "url": "https://www.instagram.com/boddepalli.kittu?exln=NjVxc3MzMGwxMzlj&utm_source=qr"
+      },
+      "instagramOfficial": {
+        "handle": "@1991group.official",
+        "url": "https://www.instagram.com"
+      }
+    }
+  },
+  "announcement": {
+    "badge": "European Union & GCC Licensed Recruitment Corridors",
+    "text": "Europe Agriculture & Packing starting from",
+    "highlight": "₹1,00,000 / Month (€1,100 - €1,200)",
+    "linkText": "View Roles",
+    "linkUrl": "#open-categories"
+  },
+  "hero": {
+    "titlePart1": "Gateway to",
+    "titleGradient": "High-Growth Careers",
+    "titlePart2": "in Europe & Gulf Countries",
+    "description": "Pioneering ethical overseas recruitment with zero hidden charges. Verified direct employer sponsorships, 100% genuine legal work permits, employer-sponsored airline tickets, furnished lodging, and comprehensive medical coverage.",
+    "activeBatchesText": "Active Batches: Poland, Romania, Germany, Hungary, Dubai, Abu Dhabi & Saudi Arabia",
+    "fastTrackBadge": "25-40 Days",
+    "fastTrackItems": [
+      {
+        "icon": "agriculture",
+        "title": "Europe Agro & Fruit Packing",
+        "badge": "₹1,00,000/mo",
+        "description": "Poland, Romania & Hungary • Schengen National D Visa with TRC residence.",
+        "iconBg": "bg-emerald-100",
+        "iconColor": "text-emerald-700",
+        "badgeBg": "bg-emerald-50",
+        "badgeColor": "text-emerald-700",
+        "badgeBorder": "border-emerald-200"
+      },
+      {
+        "icon": "inventory_2",
+        "title": "Dubai Logistics & Warehousing",
+        "badge": "MOHRE 2-Yr",
+        "description": "Dubai Logistics City • Store Keepers, Pick-Packers, Delivery & Helpers.",
+        "iconBg": "bg-cyan-100",
+        "iconColor": "text-cyan-700",
+        "badgeBg": "bg-cyan-50",
+        "badgeColor": "text-cyan-700",
+        "badgeBorder": "border-cyan-200"
+      },
+      {
+        "icon": "verified_user",
+        "title": "Zero Advance Hidden Charges",
+        "badge": "Transparent",
+        "description": "Direct embassy attestation, ministry contracts, and authenticated paperwork.",
+        "iconBg": "bg-purple-100",
+        "iconColor": "text-purple-700",
+        "badgeBg": "bg-purple-50",
+        "badgeColor": "text-purple-700",
+        "badgeBorder": "border-purple-200"
+      }
+    ]
+  },
+  "stats": [
+    {
+      "label": "Candidates Deployed",
+      "value": "12,450+",
+      "description": "Successfully placed across Europe & Gulf",
+      "icon": "public",
+      "accentColor": "emerald"
+    },
+    {
+      "label": "Visa Clearance Rate",
+      "value": "98.6%",
+      "description": "Authentic embassy & ministry stamping",
+      "icon": "verified",
+      "accentColor": "cyan"
+    },
+    {
+      "label": "Legal Work Permits",
+      "value": "100%",
+      "description": "Direct corporate employer sponsored",
+      "icon": "gavel",
+      "accentColor": "emerald"
+    },
+    {
+      "label": "Global Presence",
+      "value": "Dual HQ",
+      "description": "Corporate Dubai & Vizag Operations HQ",
+      "icon": "apartment",
+      "accentColor": "cyan"
+    }
+  ],
+  "corridors": [
+    {
+      "id": "europe",
+      "flag": "🇪🇺",
+      "title": "European Union (EU)",
+      "visaType": "Schengen TRC & National D Visa",
+      "badge": "High Quota",
+      "highlightTitle": "Urgent Recruitment",
+      "highlightSalary": "Starting ₹1,00,000/mo",
+      "highlightSub": "Farming | Tomato & Fruit Packing | Chicken Cutting",
+      "description": "Embassy certified legal contracts in Poland, Romania, Germany, Hungary & Portugal. Free furnished lodging, meals, overtime bonuses & TRC resident permit.",
+      "countries": ["Poland", "Romania", "Germany", "Hungary", "Portugal"],
+      "buttonText": "Explore Europe Vacancies",
+      "targetCategory": "europe"
+    },
+    {
+      "id": "uae",
+      "flag": "🇦🇪",
+      "title": "United Arab Emirates",
+      "visaType": "MOHRE 2-Year Residency",
+      "badge": "Corporate HQ",
+      "highlightTitle": "Logistics & Commercial",
+      "highlightSalary": "Free Accommodation",
+      "highlightSub": "Retail chains, store keeping, courier fleet, warehouse logistics & airport handling.",
+      "description": "Coordinated directly from our Al Mankhool Dubai HQ. 100% employer-funded visas, health cards, flight tickets, and renewal entitlements.",
+      "countries": ["Dubai HQ", "Abu Dhabi", "Sharjah", "Jebel Ali"],
+      "buttonText": "Apply for UAE Vacancies",
+      "targetCategory": "gulf"
+    },
+    {
+      "id": "ksa",
+      "flag": "🇸🇦",
+      "title": "Saudi Arabia (KSA)",
+      "visaType": "Qiwa Endorsed Mega Projects",
+      "badge": "Mega Projects",
+      "highlightTitle": "Vision 2030 Infrastructure",
+      "highlightSalary": "High Overtime",
+      "highlightSub": "Commercial transport, heavy trades, welders, technicians, and industrial facilities.",
+      "description": "Official government ministry verified Qiwa work permits with comprehensive food, lodging, and GAMCA medical attestation handled via Vizag HQ.",
+      "countries": ["Riyadh", "Jeddah", "Dammam", "NEOM Corridor"],
+      "buttonText": "Apply for KSA Vacancies",
+      "targetCategory": "gulf"
+    },
+    {
+      "id": "qatar",
+      "flag": "🇶🇦",
+      "title": "State of Qatar",
+      "visaType": "QVC & Ministry Quotas",
+      "badge": "Active Intake",
+      "highlightTitle": "Hospitality & Ground Ops",
+      "highlightSalary": "Duty Meals",
+      "highlightSub": "4 & 5-Star luxury hotels, airport ground support, store keeping, and transit drivers.",
+      "description": "Biometric enrollment through Qatar Visa Centers (QVC). Legal contracts featuring complete medical health cards and annual return flights.",
+      "countries": ["Doha", "Hamad Intl Hub", "Lusail City"],
+      "buttonText": "Apply for Qatar Vacancies",
+      "targetCategory": "gulf"
+    },
+    {
+      "id": "kuwait",
+      "flag": "🇰🇼",
+      "title": "State of Kuwait",
+      "visaType": "Commercial & Marine Visas",
+      "badge": "Verified Quota",
+      "highlightTitle": "Marine, Desalination & Trades",
+      "highlightSalary": "Full Catering",
+      "highlightSub": "Desalination plant helpers, marine facility logistics, delivery staff & corporate camps.",
+      "description": "Pre-screened bilateral employment contracts with certified camp facilities, medical insurance, and full consular attestation.",
+      "countries": ["Kuwait City", "Shuwaikh Port", "Ahmadi"],
+      "buttonText": "Apply for Kuwait Vacancies",
+      "targetCategory": "gulf"
+    },
+    {
+      "id": "bahrain",
+      "flag": "🇧🇭",
+      "title": "Kingdom of Bahrain",
+      "visaType": "LMRA Fast-Track",
+      "badge": "Quick Visa",
+      "highlightTitle": "Retail & Maintenance",
+      "highlightSalary": "Fast Clearances",
+      "highlightSub": "Hypermarkets, department store cashiers, facility maintenance, and light transport.",
+      "description": "Expedited Labor Market Regulatory Authority (LMRA) work permit approvals with furnished company quarters and complete insurance.",
+      "countries": ["Manama", "Muharraq", "Logistics Hubs"],
+      "buttonText": "Apply for Bahrain Vacancies",
+      "targetCategory": "gulf"
+    }
+  ],
+  "jobRoles": [
+    {
+      "id": "greenhouse-packing",
+      "title": "Greenhouse & Fruit Packing",
+      "category": "europe",
+      "corridors": "Romania, Poland & Germany (EU)",
+      "badge": "Starting ₹1 Lakh",
+      "salaryBanner": "National D Visa / TRC Residency • Starting ₹1,00,000 / mo",
+      "icon": "potted_plant",
+      "iconColor": "emerald",
+      "features": [
+        "Tomato & fruit sorting, packaging, weighing",
+        "Free employer furnished accommodation & food",
+        "Air ticket & consular visa stamping included"
+      ]
+    },
+    {
+      "id": "poultry-cutting",
+      "title": "Poultry & Chicken Cutting Specialists",
+      "category": "europe",
+      "corridors": "Poland, Hungary & Romania (EU)",
+      "badge": "Starting ₹1 Lakh",
+      "salaryBanner": "Meat Processing Line • Starting ₹1,00,000 / mo",
+      "icon": "restaurant",
+      "iconColor": "rose",
+      "features": [
+        "Chicken cutting, portioning & pack lines",
+        "Thermal protective gear and safety equipment",
+        "Free dormitory quarters, heating & Wi-Fi"
+      ]
+    },
+    {
+      "id": "farming-agriculture",
+      "title": "Farming & Field Agriculture",
+      "category": "europe",
+      "corridors": "Poland, Romania & Germany (EU)",
+      "badge": "Starting ₹1 Lakh",
+      "salaryBanner": "Crop Harvest & Farm Ops • Starting ₹1,00,000 / mo",
+      "icon": "agriculture",
+      "iconColor": "emerald",
+      "features": [
+        "Harvesting, crop cultivation & field maintenance",
+        "Official European national work permit",
+        "Free lodging, meals & airport transport"
+      ]
+    },
+    {
+      "id": "warehouse-packer",
+      "title": "Warehouse Pick & Packer",
+      "category": "gulf",
+      "corridors": "UAE Freezones & Poland",
+      "badge": "High Demand",
+      "salaryBanner": "100% Employer Funded Visa & Air Ticket",
+      "icon": "package_2",
+      "iconColor": "cyan",
+      "features": [
+        "Barcode scanning, order sorting & packing",
+        "Air-conditioned automated warehouse",
+        "Company accommodation and overtime pay"
+      ]
+    },
+    {
+      "id": "store-keeper",
+      "title": "Store Keepers & Inventory Specialist",
+      "category": "gulf",
+      "corridors": "Dubai Logistics City & Qatar",
+      "badge": "MOHRE 2-Yr",
+      "salaryBanner": "MOHRE 2-Year Card • ERP Training",
+      "icon": "shelves",
+      "iconColor": "cyan",
+      "features": [
+        "Stock audit, bin allocation & dispatch logging",
+        "Return ticket after each completed contract term",
+        "Comprehensive health card coverage"
+      ]
+    },
+    {
+      "id": "delivery-rider",
+      "title": "Delivery Riders (Bicycle & Motorbike)",
+      "category": "gulf",
+      "corridors": "Dubai, Abu Dhabi & Riyadh",
+      "badge": "High Tips",
+      "salaryBanner": "New Bike + SIM Card + Fuel Included",
+      "icon": "two_wheeler",
+      "iconColor": "amber",
+      "features": [
+        "Fast-track GCC motorcycle license assistance",
+        "Company-provided shared residential suites",
+        "High tip income and monthly performance bonuses"
+      ]
+    },
+    {
+      "id": "drivers-heavy-light",
+      "title": "Heavy & Light Vehicle Drivers",
+      "category": "gulf",
+      "corridors": "UAE, Saudi Arabia, Qatar & Poland",
+      "badge": "Licensed",
+      "salaryBanner": "Indian & GCC License Endorsement",
+      "icon": "local_shipping",
+      "iconColor": "indigo",
+      "features": [
+        "Direct client driving trials at Vizag HQ",
+        "Trailer, heavy bus, transit vans and light cars",
+        "Company accommodation and return air tickets"
+      ]
+    },
+    {
+      "id": "accountants-cashiers",
+      "title": "Accountants & Cashiers",
+      "category": "gulf",
+      "corridors": "UAE Supermarkets & Retail Hubs",
+      "badge": "Corporate",
+      "salaryBanner": "B.Com / M.Com • Tally & POS Systems",
+      "icon": "calculate",
+      "iconColor": "teal",
+      "features": [
+        "Corporate accounting & counter billing",
+        "Annual paid vacation leave with air tickets",
+        "Corporate insurance and career progression"
+      ]
+    },
+    {
+      "id": "airport-aviation",
+      "title": "Air Hostess & Airport Ground Staff",
+      "category": "gulf",
+      "corridors": "Gulf International Airport Hubs",
+      "badge": "Aviation",
+      "salaryBanner": "Aviation Contracts • Uniform & Housing",
+      "icon": "flight",
+      "iconColor": "sky",
+      "features": [
+        "Airside ground handling, check-in & cabin hospitality",
+        "Airport airside pass and premium transit",
+        "Duty-free allowances and flight perks"
+      ]
+    },
+    {
+      "id": "welders-carpenters",
+      "title": "Welders (6G/TIG) & Carpenters",
+      "category": "technical",
+      "corridors": "European Shipyards & GCC Projects",
+      "badge": "Technical",
+      "salaryBanner": "Technical Testing at Vizag Facility",
+      "icon": "handyman",
+      "iconColor": "orange",
+      "features": [
+        "6G/TIG pipe welding & finishing carpentry",
+        "Certified European safety PPE kits & tools",
+        "Overtime bonuses and full catering quarters"
+      ]
+    },
+    {
+      "id": "marine-water-helpers",
+      "title": "Water Helpers & Marine Trades",
+      "category": "technical",
+      "corridors": "UAE, Kuwait & Saudi Desalination",
+      "badge": "Marine",
+      "salaryBanner": "Marine & Water Treatment Facilities",
+      "icon": "water_drop",
+      "iconColor": "blue",
+      "features": [
+        "Desalination pipeline support & port helper jobs",
+        "Complete embassy stamping handled via Vizag HQ",
+        "Full company camp accommodation and meals"
+      ]
+    },
+    {
+      "id": "hospitality-sales",
+      "title": "Hospitality & Sales Staff",
+      "category": "gulf",
+      "corridors": "4 & 5-Star Hotel Chains in Dubai & Doha",
+      "badge": "Luxury",
+      "salaryBanner": "Waiters, Stewards & Front Desk",
+      "icon": "room_service",
+      "iconColor": "amber",
+      "features": [
+        "Luxury hotel placement with duty meals & tips",
+        "Employee housing apartments with transit",
+        "Structured international hospitality progression"
+      ]
+    },
+    {
+      "id": "facilities-domestic",
+      "title": "Facilities & Domestic Keepers",
+      "category": "gulf",
+      "corridors": "UAE, Kuwait & Saudi Arabia",
+      "badge": "Welfare Care",
+      "salaryBanner": "Embassy Regulated Bilateral Agreements",
+      "icon": "cleaning_services",
+      "iconColor": "emerald",
+      "features": [
+        "Corporate facilities & verified private premises",
+        "Free private quarters, food, Wi-Fi & health card",
+        "24/7 dedicated welfare officer assistance"
+      ]
+    }
+  ],
+  "roadmap": [
+    {
+      "step": "01",
+      "title": "Profile Assessment & Verification",
+      "description": "Submit your Passport copy, Bio-data, and trade experience certificates. Free pre-screening to match you with authorized European and GCC company quotas.",
+      "timeframe": "Turnaround: 24 to 48 Hours",
+      "icon": "document_scanner",
+      "color": "cyan"
+    },
+    {
+      "step": "02",
+      "title": "Direct Interview & Offer Letter",
+      "description": "Appear for an online video trial or walk-in client selection at our Vizag or Dubai corporate branch. Receive an official government-registered offer letter.",
+      "timeframe": "Duration: 3 to 7 Days",
+      "icon": "groups",
+      "color": "emerald"
+    },
+    {
+      "step": "03",
+      "title": "Work Permit & Visa Endorsement",
+      "description": "Our registered legal advocates coordinate official work permit approval, Ministry & Embassy consular attestation, GAMCA medicals, and visa stamping.",
+      "timeframe": "Duration: 15 to 30 Days",
+      "icon": "badge",
+      "color": "cyan"
+    },
+    {
+      "step": "04",
+      "title": "Flight Ticket & Landing Support",
+      "description": "Pre-departure briefing, direct flight booking, overseas airport reception by our local team, employer check-in, and accommodation handover.",
+      "timeframe": "Deployment & Welfare Check",
+      "icon": "flight_takeoff",
+      "color": "emerald"
+    }
+  ],
+  "leadership": [
+    {
+      "name": "Krishna Boddepalli",
+      "title": "Head Manager & Founder",
+      "badge": "HEAD MANAGER",
+      "bio": "Oversees strategic overseas corridors, bilateral employer partnerships in Europe & the GCC, and certified visa sponsorship protocols with zero advance charges.",
+      "tags": ["MOHRE & MEA Licensed", "12,450+ Deployed"],
+      "photo": "https://lh3.googleusercontent.com/aida-public/AB6AXuDTdkNXgvP4M-9qGfhX9bvb90C-tH1OAWU-eYeGQlJbAG4VKA_BLDZmdjrxmxqu4Fc1S8qi8pCFrZIG7Zc-x18dKjI8ER1hqVnAcxDY6_sdnMgPqij_4EaPzfMdcsgmzn0xxHC3n6auJhmK-HjaxKdjiW44jx-OYj-4onzcgI2mQViZ9Zu77xb17sQzoyhhWcn4WxIkZ7X9gssmYKqNqLLRSjNd3tu0ifoOWqhQf8otZOk2fPJRvfU7aZCkhg60BVfk07Q",
+      "instagram": {
+        "handle": "@boddepalli.kittu",
+        "url": "https://www.instagram.com/boddepalli.kittu?exln=NjVxc3MzMGwxMzlj&utm_source=qr"
+      }
+    },
+    {
+      "name": "Priyanka Dhamini",
+      "title": "Marketing Manager & Candidate Relations",
+      "badge": "RELATIONS",
+      "bio": "Directs transparent candidate outreach, onboarding counseling, documentation verification, and post-placement welfare assistance across India operations.",
+      "tags": ["Vizag Operations HQ", "24/7 Welfare Cell"],
+      "photo": "https://lh3.googleusercontent.com/aida-public/AB6AXuBclunnm2yGHjRlx5xf0qywjWJXsogN5xdrFIX877UUvwB2xUFXzRE0jBrFPpVvQTxoDnzoUTuGyM31hFN8OwJ_whV9YVHQChMdHgKWZy-rbc3MqML4Z8x1e_vFiycqc0lOrvocKc_HnGm84FwShz5yeuwqLnTWfow2SCTXSa3Bq7KMZBc_AZM95qB7JHawyBoGXnxP7pcYg4W_bW4_DVMAPFlU5jGXgMMgS8wscCHrJ6fPOVlcJ-BXcKiNiqs0lFPY6wg",
+      "whatsapp": {
+        "label": "Connect via WhatsApp",
+        "number": "918910000000",
+        "message": "Hello Priyanka, I would like guidance regarding overseas vacancies"
+      }
+    }
+  ],
+  "candidateGallery": [
+    {
+      "name": "Rajesh P.",
+      "role": "Greenhouse Farming & Produce Specialist",
+      "location": "Romania, EU",
+      "batch": "Batch: May 2024",
+      "badge": "Schengen TRC Residence",
+      "corridor": "Europe Corridor",
+      "permitType": "100% Legal Work Permit",
+      "quote": "Visa cleared in 32 days with free company lodging and food. 1991 Group handled my entire consular documentation and flight ticket from Vizag. Total peace of mind throughout the journey.",
+      "photo": "https://lh3.googleusercontent.com/aida/AEtjO1VAWzzx0Hd3IoR6hYa_DvShaHUp-mdtj93HYWqQSokwVDn-nykSRuPme9FiqqWutx3ZE2AUyXI5BHGpYKEgCFHDX1uUFVd0Usq9pHojB7R7ZCkUM3_f0b7fB1LjcQGBpr_DOhpgLkVMZ3uZoNZ3z5xdT4rLUqqdQR-q52ueS9oVwKvGNO06LsE_NoAGAHX6oL0jm3-5K-CSSLEGSUwDX1Qz9UfWrEXgDTb0S0pl9KpfbTzIPQt8j-cY2ueD"
+    },
+    {
+      "name": "Suresh Kumar M.",
+      "role": "Warehouse Store Keeper & Inventory",
+      "location": "Dubai, UAE",
+      "batch": "Batch: March 2024",
+      "badge": "MOHRE Legal Residence",
+      "corridor": "Dubai Logistics City",
+      "permitType": "2-Year Residence Card",
+      "quote": "Direct placement through the 1991 Group Dubai office. 100% genuine visa, on-time flights, and full employer benefits provided including free accommodation and medical card.",
+      "photo": "https://lh3.googleusercontent.com/aida/AEtjO1VKWVg3wsuQh6IgtBy558LssXqukwgmC3rJUvNi6rJKaSC6f5xYbj6jwkxZKbsJQot51v1R3r8qMyCXU5LTrsNEa7AU0ssevKQln5aM7xqr3npNmaa61MF6fbNT1ozSqMyWXvyJEtCQouj9EnEREjONAI9IlPdc13dUO-HoZ5vWBvqgVmEm5fZUcI-RweULXqDlc34RW05oBO0DeLd5vmx2Bs-su-wd3s7Vu1jK0LpxwDTqWy29kS0LVPM"
+    },
+    {
+      "name": "Venkat Rao K.",
+      "role": "Quick Delivery Courier Specialist",
+      "location": "Dubai & Sharjah",
+      "batch": "Batch: June 2024",
+      "badge": "Commercial Fleet Visa",
+      "corridor": "Fleet Mobility",
+      "permitType": "GCC License Endorsed",
+      "quote": "From driving orientation to UAE license endorsement, 1991 Group managed every step with complete honesty and speed. I was deployed within 28 days with full support.",
+      "photo": "https://lh3.googleusercontent.com/aida/AEtjO1Xx0evVvzltSWVug8fvBfns7eUCYcTgLx0yLqkpWrirlYwRf05gy5v8YbHU1N8UcQx_GBI13zM--MHMZhvbqlqguxtWIxa2IH-9RIofi5UBow5ONwo7Ql4Cm-BI8HhVMCMQyI2RYYJRTsnPVXSLnRyNYoxTyGD1Y7ImQs_LMkf5kTEPconQM4zir44ewi9TVgPMYPWyYUSoylzgszf5FwMTGpHSPrlB-bRf98dZaUtG65qGG8dGSsrKbys"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Are your recruitment services and work visas 100% genuine and legal?",
+      "answer": "Yes, absolutely. 1991 Group operates under verified MEA (Ministry of External Affairs) accreditation in India and UAE MOHRE licensing in Dubai. All visas are direct employer-sponsored national work permits with biometric embassy attestation."
+    },
+    {
+      "question": "What is included with Europe agriculture and warehouse placements?",
+      "answer": "Selected candidates receive an official Schengen National D Visa / TRC residency permit, employer-sponsored airline ticket, furnished accommodation, on-duty food or food allowance, comprehensive medical insurance, and full local transit."
+    },
+    {
+      "question": "Do I have to pay any advance hidden charges?",
+      "answer": "No. We enforce a strict zero advance hidden fee policy. Documentation, interview, and profile verification are handled with complete contractual transparency from day one."
+    },
+    {
+      "question": "How long does the entire placement process take from application to flight?",
+      "answer": "Gulf and UAE positions typically take 20 to 35 days from selection to flight departure. European Union (Poland, Romania, Germany, Hungary) work permits take approximately 30 to 60 days depending on embassy appointment schedules."
+    },
+    {
+      "question": "Can I visit your offices in person for consultation?",
+      "answer": "Yes! Candidates and their families are welcome to visit our Corporate HQ in Al Mankhool, Dubai, or our India Operations HQ in Arilova, Visakhapatnam (Vizag) from Monday to Saturday during working hours."
+    }
+  ]
+}
