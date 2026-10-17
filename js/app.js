@@ -724,7 +724,183 @@ Please verify my profile for the next available deployment batch.`;
   closeApplyModal();
 }
 
+// ==========================================
+// THEME MANAGEMENT SYSTEM (Default: System)
+// ==========================================
+const ThemeManager = {
+  KEY: 'app_theme_preference', // 'system' | 'light' | 'dark'
+
+  getStoredPreference() {
+    try {
+      return localStorage.getItem(this.KEY) || 'system';
+    } catch (e) {
+      return 'system';
+    }
+  },
+
+  getSystemPreference() {
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  },
+
+  applyTheme(pref, save = true) {
+    if (save) {
+      try {
+        localStorage.setItem(this.KEY, pref);
+      } catch (e) {}
+    }
+    const resolved = (pref === 'system') ? this.getSystemPreference() : pref;
+    
+    if (resolved === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+
+    this.updateUI(pref, resolved);
+  },
+
+  updateUI(pref, resolved) {
+    // 1. Desktop dropdown icon & label
+    const iconEl = document.getElementById('theme-toggle-icon');
+    const labelEl = document.getElementById('theme-toggle-label');
+    if (iconEl) {
+      if (pref === 'system') {
+        iconEl.textContent = 'desktop_windows';
+      } else if (pref === 'dark') {
+        iconEl.textContent = 'dark_mode';
+      } else {
+        iconEl.textContent = 'light_mode';
+      }
+    }
+    if (labelEl) {
+      labelEl.textContent = pref === 'system' ? 'Auto' : (pref === 'dark' ? 'Dark' : 'Light');
+    }
+
+    // 2. Desktop dropdown checkmarks and active state
+    document.querySelectorAll('.theme-menu-item').forEach(item => {
+      const val = item.getAttribute('data-theme-val');
+      const checkIcon = item.querySelector('.check-icon');
+      if (val === pref) {
+        item.classList.add('active');
+        if (checkIcon) checkIcon.classList.remove('hidden');
+      } else {
+        item.classList.remove('active');
+        if (checkIcon) checkIcon.classList.add('hidden');
+      }
+    });
+
+    // 3. Mobile drawer status label & segmented buttons
+    const mobileStatusEl = document.getElementById('mobile-theme-status');
+    if (mobileStatusEl) {
+      mobileStatusEl.textContent = pref === 'system' ? `Auto (${resolved})` : (pref === 'dark' ? 'Dark' : 'Light');
+    }
+
+    document.querySelectorAll('.theme-btn-option').forEach(btn => {
+      const val = btn.getAttribute('data-theme-val');
+      if (val === pref) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    });
+  },
+
+  toggleNextTheme() {
+    const current = this.getStoredPreference();
+    let next = 'dark';
+    if (current === 'system') {
+      const sys = this.getSystemPreference();
+      next = (sys === 'dark') ? 'light' : 'dark';
+    } else if (current === 'dark') {
+      next = 'light';
+    } else if (current === 'light') {
+      next = 'system';
+    }
+    this.applyTheme(next, true);
+    return next;
+  },
+
+  init() {
+    const currentPref = this.getStoredPreference();
+    this.applyTheme(currentPref, false);
+
+    // Watch for OS theme changes in real-time
+    if (window.matchMedia) {
+      const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+      const handleOsChange = () => {
+        if (this.getStoredPreference() === 'system') {
+          this.applyTheme('system', false);
+        }
+      };
+      if (mediaQuery.addEventListener) {
+        mediaQuery.addEventListener('change', handleOsChange);
+      } else if (mediaQuery.addListener) {
+        mediaQuery.addListener(handleOsChange);
+      }
+    }
+
+    // Attach desktop dropdown toggling
+    const toggleBtn = document.getElementById('theme-toggle-btn');
+    const dropdownMenu = document.getElementById('theme-dropdown-menu');
+    const chevronBtn = document.getElementById('theme-chevron-btn');
+
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        this.toggleNextTheme();
+      });
+    }
+
+    if (chevronBtn && dropdownMenu) {
+      chevronBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        dropdownMenu.classList.toggle('hidden');
+      });
+    }
+
+    if (dropdownMenu) {
+      document.addEventListener('click', (e) => {
+        if (!dropdownMenu.contains(e.target) && (!chevronBtn || !chevronBtn.contains(e.target))) {
+          dropdownMenu.classList.add('hidden');
+        }
+      });
+
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !dropdownMenu.classList.contains('hidden')) {
+          dropdownMenu.classList.add('hidden');
+        }
+      });
+    }
+
+    // Attach desktop dropdown item clicks
+    document.querySelectorAll('.theme-menu-item').forEach(item => {
+      item.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const val = item.getAttribute('data-theme-val');
+        if (val) {
+          this.applyTheme(val, true);
+          if (dropdownMenu) dropdownMenu.classList.add('hidden');
+        }
+      });
+    });
+
+    // Attach mobile drawer segmented button clicks
+    document.querySelectorAll('.theme-btn-option').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const val = btn.getAttribute('data-theme-val');
+        if (val) {
+          this.applyTheme(val, true);
+        }
+      });
+    });
+  }
+};
+
+// Expose globally
+window.ThemeManager = ThemeManager;
+
 // Start execution on DOM Ready
 document.addEventListener('DOMContentLoaded', () => {
+  ThemeManager.init();
   loadDynamicContent();
 });
