@@ -480,6 +480,21 @@
         "message": "Hello Priyanka, I would like guidance regarding overseas vacancies",
         "icon": "chat"
       }
+    },
+    {
+      "name": "Uppuluri Ganesh",
+      "title": "Operations Manager (Dubai HQ)",
+      "badge": "DUBAI OPERATIONS HEAD",
+      "bio": "Directs UAE on-ground operations, corporate employer liaison, documentation clearance, and complete candidate post-landing welfare across Dubai and Sharjah.",
+      "tags": ["Dubai Corporate HQ", "Direct Desk: +971 56 862 5673"],
+      "photo": "./images/team/uppuluri-ganesh.jpg",
+      "action": {
+        "type": "whatsapp",
+        "label": "WhatsApp: +971 56 862 5673",
+        "number": "971568625673",
+        "message": "Hello Ganesh, I would like to inquire about Dubai and UAE opportunities",
+        "icon": "chat"
+      }
     }
   ],
   "candidateGallery": [
@@ -514,7 +529,7 @@
       "corridor": "UAE Gulf Corridor",
       "permitType": "GCC Commercial Fleet Visa",
       "quote": "From driving orientation to UAE license endorsement, 1991 Group managed every step with complete honesty and speed. I was deployed within 28 days with full support.",
-      "photo": "https://lh3.googleusercontent.com/aida/AEtjO1Xx0evVvzltSWVug8fvBfns7eUCYcTgLx0yLqkpWrirlYwRf05gy5v8YbHU1N8UcQx_GBI13zM--MHMZhvbqlqguxtWIxa2IH-9RIofi5UBow5ONwo7Ql4Cm-BI8HhVMCMQyI2RYYJRTsnPVXSLnRyNYoxTyGD1Y7ImQs_LMkf5kTEPconQM4zir44ewi9TVgPMYPWyYUSoylzgszf5FwMTGpHSPrlB-bRf98dZaUtG65qGG8dGSsrKbys"
+      "photo": "./images/candidates/dubai-courier.jpg"
     }
   ],
   "faqs": [

@@ -380,16 +380,16 @@ function renderLeadership() {
     }
 
     return `
-      <div class="rounded-3xl p-6 sm:p-7 bg-white border border-slate-200 hover:border-emerald-500 transition-all shadow-sm flex flex-col sm:flex-row gap-6 items-center sm:items-start group hover:shadow-xl">
+      <div class="rounded-3xl p-5 sm:p-6 bg-white border border-slate-200 hover:border-emerald-500 transition-all shadow-sm flex flex-col sm:flex-row lg:flex-col xl:flex-row gap-5 items-center sm:items-start lg:items-center xl:items-start text-center sm:text-left lg:text-center xl:text-left group hover:shadow-xl">
         <div class="relative flex-shrink-0">
-          <div class="w-32 h-40 sm:w-36 sm:h-44 rounded-2xl overflow-hidden border-2 border-emerald-500 shadow-md group-hover:scale-105 transition-transform duration-300 bg-slate-100">
+          <div class="w-32 h-40 sm:w-32 sm:h-40 rounded-2xl overflow-hidden border-2 border-emerald-500 shadow-md group-hover:scale-105 transition-transform duration-300 bg-slate-100">
             <img alt="${leader.name}" class="w-full h-full object-cover object-top" src="${leader.photo}" loading="lazy">
           </div>
           <span class="absolute -bottom-2 -right-2 px-2.5 py-0.5 rounded-md bg-emerald-600 text-white font-extrabold text-[9px] uppercase tracking-wider shadow-sm">
             VERIFIED
           </span>
         </div>
-        <div class="flex-1 text-center sm:text-left space-y-2">
+        <div class="flex-1 space-y-2">
           <div>
             <span class="text-[11px] font-bold text-emerald-700 uppercase tracking-wider block">${leader.title}</span>
             <h4 class="text-xl font-bold text-slate-900 mt-0.5">${leader.name}</h4>
@@ -397,12 +397,12 @@ function renderLeadership() {
               ${leader.bio}
             </p>
           </div>
-          <div class="pt-2 flex flex-wrap gap-2 justify-center sm:justify-start">
+          <div class="pt-2 flex flex-wrap gap-1.5 justify-center sm:justify-start lg:justify-center xl:justify-start">
             ${(leader.tags || []).map((t, i) => `
               <span class="px-2.5 py-1 rounded-lg ${i === 0 ? 'bg-slate-100 border border-slate-200 text-slate-700' : 'bg-emerald-50 text-emerald-800 border border-emerald-200'} text-[11px] font-semibold">${t}</span>
             `).join('')}
           </div>
-          <div class="pt-3">
+          <div class="pt-3 flex justify-center sm:justify-start lg:justify-center xl:justify-start">
             ${actionBtn}
           </div>
         </div>
