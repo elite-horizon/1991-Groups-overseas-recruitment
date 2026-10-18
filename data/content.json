@@ -486,12 +486,12 @@
       "title": "Operations Manager (Dubai HQ)",
       "badge": "DUBAI OPERATIONS HEAD",
       "bio": "Directs UAE on-ground operations, corporate employer liaison, documentation clearance, and complete candidate post-landing welfare across Dubai and Sharjah.",
-      "tags": ["Dubai Corporate HQ", "Direct Desk: +971 56 862 5673"],
+      "tags": ["Dubai Corporate HQ", "Direct Desk: +971 55 569 4504"],
       "photo": "./images/team/uppuluri-ganesh.jpg",
       "action": {
         "type": "whatsapp",
-        "label": "WhatsApp: +971 56 862 5673",
-        "number": "971568625673",
+        "label": "WhatsApp: +971 55 569 4504",
+        "number": "971555694504",
         "message": "Hello Ganesh, I would like to inquire about Dubai and UAE opportunities",
         "icon": "chat"
       }
