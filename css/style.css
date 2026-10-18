@@ -11,6 +11,18 @@
   --brand-surface: #f8f9ff;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  position: relative;
+  -webkit-text-size-adjust: 100%;
+}
+
 html {
   scroll-behavior: smooth;
   font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
@@ -19,7 +31,11 @@ html {
 body {
   background-color: var(--brand-surface);
   color: #1e293b;
-  overflow-x: hidden;
+}
+
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
 }
 
 .material-symbols-outlined {
@@ -102,15 +118,17 @@ body {
 
 /* Off-canvas mobile drawer */
 .drawer-backdrop {
-  display: block !important;
+  overflow: hidden !important;
   transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .drawer-backdrop.hidden {
+  display: none !important;
   opacity: 0 !important;
   visibility: hidden !important;
   pointer-events: none !important;
 }
 .drawer-backdrop:not(.hidden) {
+  display: block !important;
   opacity: 1 !important;
   visibility: visible !important;
   pointer-events: auto !important;
@@ -128,15 +146,17 @@ body {
 
 /* Modal styling */
 .modal-overlay {
-  display: flex !important;
+  overflow: hidden !important;
   transition: opacity 0.25s ease, visibility 0.25s ease;
 }
 .modal-overlay.hidden {
+  display: none !important;
   opacity: 0 !important;
   visibility: hidden !important;
   pointer-events: none !important;
 }
 .modal-overlay:not(.hidden) {
+  display: flex !important;
   opacity: 1 !important;
   visibility: visible !important;
   pointer-events: auto !important;
