@@ -2,11 +2,14 @@
 
 Official web portal for **1991 Group of Companies**, licensed overseas manpower and recruitment consultancy with dual headquarters in Dubai (UAE) and Visakhapatnam (India).
 
-### 🌐 Live Production URL (AWS CloudFront + S3)
-👉 **[https://d225xwv35y55uy.cloudfront.net](https://d225xwv35y55uy.cloudfront.net)**
+### 🌐 Official Live Production URLs
+* **Primary Domain**: 👉 **[https://1991groupofcompanies.com](https://1991groupofcompanies.com)**
+* **Subdomain**: 👉 **[https://www.1991groupofcompanies.com](https://www.1991groupofcompanies.com)**
+* **CloudFront Direct**: [https://d225xwv35y55uy.cloudfront.net](https://d225xwv35y55uy.cloudfront.net)
 
 * **Hosting**: Amazon S3 (`1991groups-recruitment`) in `ap-south-1` (Mumbai)
-* **CDN & Edge Security**: Amazon CloudFront (`E3E2IRRVIFVPXO`)
+* **CDN & Edge Security**: Amazon CloudFront (`E3E2IRRVIFVPXO`) with Free Auto-Renewing SSL (ACM)
+* **DNS Management**: AWS Route 53 (Dual Stack IPv4 + IPv6 Alias)
 * **CI/CD Pipeline**: GitHub Actions auto-deploys to S3 and invalidates CloudFront on every push to `main`.
 
 ---
