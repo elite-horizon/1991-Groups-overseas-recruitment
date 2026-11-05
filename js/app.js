@@ -423,7 +423,7 @@ function renderCandidateGallery() {
     return `
       <div class="rounded-3xl bg-white border border-slate-200 hover:border-emerald-500 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden group">
         <div class="relative h-64 w-full overflow-hidden bg-slate-100">
-          <img alt="${cand.name} - ${cand.role}" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" src="${cand.photo}" loading="lazy">
+          <img alt="${cand.name} - ${cand.role}" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" src="${cand.photo}" onerror="this.src='./images/candidates/dubai-courier.jpg'; this.onerror=null;" loading="lazy">
           <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-black/20"></div>
           <div class="absolute top-4 left-4 right-4 flex items-center justify-between gap-2">
             <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-600 text-white text-[11px] font-extrabold tracking-wide shadow-md">
