@@ -50,3 +50,4 @@ jobs:
           aws cloudfront create-invalidation \
             --distribution-id E3E2IRRVIFVPXO \
             --paths "/*"
+
