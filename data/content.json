@@ -3,8 +3,8 @@
     "companyName": "1991 Group of Companies",
     "brandShort": "1991 GROUP",
     "tagline": "Overseas Recruitment & Global Mobility",
-    "meaBadge": "MEA Registered",
-    "mohreBadge": "UAE MOHRE Licensed",
+    "meaBadge": "Global Mobility",
+    "mohreBadge": "Dubai Corporate Office",
     "isoBadge": "ISO 9001:2015 Certified Agency",
     "logoUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuDLWKOVuvXdEYtj8knT3dh-jkOItQSWQ4zB-VCt7iqMPLtUSXosToOYq1ct7SmTeU_FM2QZco-9v48Mts2bfZYkAyA6NqBfMnmZPYzt3aMDp7GZkW6WfnGoOYOUynh80xHqSoAAFQgHH7V7v2Z6AjEZejfC8Xkm5RiamqRcabqz6nvPJN844La8gq2gvdDkcTMYlJEhIWxLWCO667OdHXcXi55o05tQor8YPdYgZ9m5bd-urZk-C6naOqaiaX06XGr7tw0",
     "footerLogoUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuBxO5wbCDYJhOjcBFrylFBapYN4wBcVdorfNIsyOeTUAUCzDarzrb8TC7-LyHIbLZDijk0xqui2y0w13fPlyOTDClF9E2VN2eU3tv2lZ6EUMbyi8nMxvHf5uGhaR8me-W22SgXXBBQsLFkxv1t0mepHEFam2oN1hB78weJxDERaRvUd6rDCGX6uW_AnmLchQbyYMOmqF9fjZugIkCbvBwVNHfNlKRMwUZj9RanIIE-teolSAGAgQeRCKsfF8Lzi7BQM62g"
@@ -15,8 +15,8 @@
     "defaultWhatsAppMessage": "Hello 1991 Group, I am inquiring about overseas job vacancies.",
     "dubaiOffice": {
       "title": "Dubai Corporate HQ (UAE)",
-      "badge": "MOHRE Compliant",
-      "address": "Office No. 1, 1st Floor (Amit Office), Room 305, Al Noor 3 Building, Al Mankhool (Near Metro Exit 4, City Centre Deira), Dubai, UAE",
+      "badge": "Corporate HQ",
+      "address": "Office No. 1, 1st Floor (Amer Office), Room 305, Al Noor 3 Building, Al Mankhool (Near Metro Exit 4, City Centre Deira), Dubai, UAE",
       "phone": "+971 55 569 4504",
       "phoneRaw": "+971555694504",
       "whatsapp": "+971 55 569 4504",
@@ -25,7 +25,7 @@
     },
     "vizagOffice": {
       "title": "Vizag Operations HQ (India)",
-      "badge": "MEA Registered",
+      "badge": "Operations HQ",
       "address": "Near Lorven Hotel, Health City, Arilova, Visakhapatnam (Vizag), Andhra Pradesh - 530040, India",
       "phone": "+91 83413 01490",
       "phoneRaw": "+918341301490",
@@ -77,7 +77,7 @@
       {
         "icon": "inventory_2",
         "title": "Dubai Logistics & Warehousing",
-        "badge": "MOHRE 2-Yr",
+        "badge": "UAE 2-Yr",
         "description": "Dubai Logistics City • Store Keepers, Pick-Packers, Delivery & Helpers.",
         "iconBg": "bg-cyan-100",
         "iconColor": "text-cyan-700",
@@ -148,7 +148,7 @@
       "id": "uae",
       "flag": "🇦🇪",
       "title": "United Arab Emirates",
-      "visaType": "MOHRE 2-Year Residency",
+      "visaType": "UAE 2-Year Residency",
       "badge": "Corporate HQ",
       "badgeStyle": "bg-cyan-100 text-cyan-800 border border-cyan-200",
       "highlightTitle": "Logistics & Commercial",
@@ -286,8 +286,8 @@
       "title": "Store Keepers & Inventory Specialist",
       "category": "gulf",
       "corridors": "Dubai Logistics City & Qatar",
-      "badge": "MOHRE 2-Yr",
-      "salaryBanner": "MOHRE 2-Year Card • ERP Training",
+      "badge": "UAE 2-Yr",
+      "salaryBanner": "UAE 2-Year Visa • ERP Training",
       "icon": "shelves",
       "colorTheme": "cyan",
       "features": [
@@ -457,7 +457,7 @@
       "title": "Head Manager & Founder",
       "badge": "FOUNDER & MANAGING DIRECTOR",
       "bio": "Oversees strategic overseas corridors, bilateral employer partnerships in Europe & the GCC, and certified visa sponsorship protocols with zero advance charges.",
-      "tags": ["MOHRE & MEA Licensed", "12,450+ Deployed"],
+      "tags": ["Global Mobility Expert", "12,450+ Deployed"],
       "photo": "https://lh3.googleusercontent.com/aida-public/AB6AXuDTdkNXgvP4M-9qGfhX9bvb90C-tH1OAWU-eYeGQlJbAG4VKA_BLDZmdjrxmxqu4Fc1S8qi8pCFrZIG7Zc-x18dKjI8ER1hqVnAcxDY6_sdnMgPqij_4EaPzfMdcsgmzn0xxHC3n6auJhmK-HjaxKdjiW44jx-OYj-4onzcgI2mQViZ9Zu77xb17sQzoyhhWcn4WxIkZ7X9gssmYKqNqLLRSjNd3tu0ifoOWqhQf8otZOk2fPJRvfU7aZCkhg60BVfk07Q",
       "action": {
         "type": "instagram",
@@ -471,28 +471,28 @@
       "title": "Marketing Manager & Candidate Relations",
       "badge": "CANDIDATE RELATIONS HEAD",
       "bio": "Directs transparent candidate outreach, onboarding counseling, documentation verification, and post-placement welfare assistance across India operations.",
-      "tags": ["Vizag Operations HQ", "Direct Desk: +91 77801177"],
+      "tags": ["Vizag Operations HQ", "Direct Desk: +91 9182715318"],
       "photo": "https://lh3.googleusercontent.com/aida-public/AB6AXuBclunnm2yGHjRlx5xf0qywjWJXsogN5xdrFIX877UUvwB2xUFXzRE0jBrFPpVvQTxoDnzoUTuGyM31hFN8OwJ_whV9YVHQChMdHgKWZy-rbc3MqML4Z8x1e_vFiycqc0lOrvocKc_HnGm84FwShz5yeuwqLnTWfow2SCTXSa3Bq7KMZBc_AZM95qB7JHawyBoGXnxP7pcYg4W_bW4_DVMAPFlU5jGXgMMgS8wscCHrJ6fPOVlcJ-BXcKiNiqs0lFPY6wg",
       "action": {
         "type": "whatsapp",
-        "label": "WhatsApp: +91 77801177",
-        "number": "9177801177",
+        "label": "WhatsApp: +91 9182715318",
+        "number": "919182715318",
         "message": "Hello Priyanka, I would like guidance regarding overseas vacancies",
         "icon": "chat"
       }
     },
     {
       "name": "MO KALAM",
-      "title": "Operations Manager (Dubai HQ)",
-      "badge": "DUBAI OPERATIONS HEAD",
-      "bio": "Directs UAE on-ground operations, corporate employer liaison, documentation clearance, and complete candidate post-landing welfare across Dubai and Sharjah.",
-      "tags": ["Dubai Corporate HQ", "Direct Desk: +971 55 569 4504"],
+      "title": "Operations Manager in Dubai and Nepal",
+      "badge": "DUBAI & NEPAL OPERATIONS",
+      "bio": "Directs UAE and Nepal on-ground operations, corporate employer liaison, documentation clearance, and complete candidate post-landing welfare across Dubai and Nepal.",
+      "tags": ["Dubai & Nepal Operations", "Direct Desk: +971 55 569 4504"],
       "photo": "./images/team/mo-kalam.jpg",
       "action": {
         "type": "whatsapp",
         "label": "WhatsApp: +971 55 569 4504",
         "number": "971555694504",
-        "message": "Hello Mo Kalam, I would like to inquire about Dubai and UAE opportunities",
+        "message": "Hello Mo Kalam, I would like to inquire about Dubai and Nepal opportunities",
         "icon": "chat"
       }
     }
@@ -514,9 +514,9 @@
       "role": "Warehouse Store Keeper & Inventory",
       "location": "Dubai, UAE",
       "batch": "Batch: March 2024",
-      "badge": "MOHRE Legal Residence",
+      "badge": "UAE Legal Residence",
       "corridor": "UAE Gulf Corridor",
-      "permitType": "MOHRE 2-Year Residence",
+      "permitType": "UAE 2-Year Residence",
       "quote": "Direct placement through the 1991 Group Dubai office. 100% genuine visa, on-time flights, and full employer benefits provided including free accommodation and medical card.",
       "photo": "./images/candidates/warehouse-worker.jpg"
     },
@@ -535,7 +535,7 @@
   "faqs": [
     {
       "question": "Are your recruitment services and work visas 100% genuine and legal?",
-      "answer": "Yes, absolutely. 1991 Group operates under verified MEA (Ministry of External Affairs) accreditation in India and UAE MOHRE licensing in Dubai. All visas are direct employer-sponsored national work permits with biometric embassy attestation."
+      "answer": "Yes, absolutely. 1991 Group facilitates 100% genuine, legal, employer-sponsored national work permits with official biometric embassy attestation and transparent documentation for Europe, Gulf, and international corridors."
     },
     {
       "question": "What is included with Europe agriculture and warehouse placements?",

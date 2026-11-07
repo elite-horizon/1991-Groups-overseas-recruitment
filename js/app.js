@@ -10,8 +10,8 @@ const FALLBACK_DATA = {
     companyName: "1991 Group of Companies",
     brandShort: "1991 GROUP",
     tagline: "Overseas Recruitment & Global Mobility",
-    meaBadge: "MEA Registered",
-    mohreBadge: "UAE MOHRE Licensed",
+    meaBadge: "Global Mobility",
+    mohreBadge: "Dubai Corporate Office",
     isoBadge: "ISO 9001:2015 Certified Agency",
     logoUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuDLWKOVuvXdEYtj8knT3dh-jkOItQSWQ4zB-VCt7iqMPLtUSXosToOYq1ct7SmTeU_FM2QZco-9v48Mts2bfZYkAyA6NqBfMnmZPYzt3aMDp7GZkW6WfnGoOYOUynh80xHqSoAAFQgHH7V7v2Z6AjEZejfC8Xkm5RiamqRcabqz6nvPJN844La8gq2gvdDkcTMYlJEhIWxLWCO667OdHXcXi55o05tQor8YPdYgZ9m5bd-urZk-C6naOqaiaX06XGr7tw0",
     footerLogoUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuBxO5wbCDYJhOjcBFrylFBapYN4wBcVdorfNIsyOeTUAUCzDarzrb8TC7-LyHIbLZDijk0xqui2y0w13fPlyOTDClF9E2VN2eU3tv2lZ6EUMbyi8nMxvHf5uGhaR8me-W22SgXXBBQsLFkxv1t0mepHEFam2oN1hB78weJxDERaRvUd6rDCGX6uW_AnmLchQbyYMOmqF9fjZugIkCbvBwVNHfNlKRMwUZj9RanIIE-teolSAGAgQeRCKsfF8Lzi7BQM62g"
@@ -22,8 +22,8 @@ const FALLBACK_DATA = {
     defaultWhatsAppMessage: "Hello 1991 Group, I am inquiring about overseas job vacancies.",
     dubaiOffice: {
       title: "Dubai Corporate HQ (UAE)",
-      badge: "MOHRE Compliant",
-      address: "Al Noor 3, 3rd Floor, Al Mankhool, Bur Dubai, Dubai, United Arab Emirates",
+      badge: "Corporate HQ",
+      address: "Office No. 1, 1st Floor (Amer Office), Room 305, Al Noor 3 Building, Al Mankhool (Near Metro Exit 4, City Centre Deira), Dubai, UAE",
       phone: "+971 55 569 4504",
       phoneRaw: "+971555694504",
       whatsapp: "+971 55 569 4504",
@@ -32,7 +32,7 @@ const FALLBACK_DATA = {
     },
     vizagOffice: {
       title: "Vizag Operations HQ (India)",
-      badge: "MEA Registered",
+      badge: "Operations HQ",
       address: "Near Lorven Hotel, Health City, Arilova, Visakhapatnam (Vizag), Andhra Pradesh - 530040, India",
       phone: "+91 83413 01490",
       phoneRaw: "+918341301490",
