@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Official Visiting Card | 1991 Group of Companies</title>
+  <meta name="description" content="Official General Company Visiting Card for 1991 Group of Companies. Print-ready 3.5 x 2 inch card with scannable QR code.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌐</text></svg>">
+
+  <!-- Google Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#0a2540',
+              dark: '#051322',
+              emerald: '#059669',
+              gold: '#d97706',
+              surface: '#0f172a'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Card Geometry: Standard US/International Business Card (3.5" x 2" / 88.9mm x 50.8mm) */
+    .business-card {
+      width: 3.5in;
+      height: 2.0in;
+      min-width: 3.5in;
+      min-height: 2.0in;
+      max-width: 3.5in;
+      max-height: 2.0in;
+      box-sizing: border-box;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Print Specific Rules */
+    @media print {
+      body {
+        background: #ffffff !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .print-page {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 0.25in !important;
+        page-break-after: always;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 0.5in 0 !important;
+      }
+      .business-card {
+        box-shadow: none !important;
+        border: 1px solid #cbd5e1 !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        page-break-inside: avoid !important;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-[#051322] text-slate-100 min-h-screen font-sans flex flex-col justify-between selection:bg-emerald-500 selection:text-white">
+
+  <!-- Screen Top Bar (Hidden in Print) -->
+  <header class="no-print border-b border-white/10 bg-[#0a2540]/80 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3.5 flex flex-wrap items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <a href="index.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-xs font-bold transition-colors">
+          <span class="material-symbols-outlined text-sm">arrow_back</span>
+          <span>Back to Website</span>
+        </a>
+        <div class="h-4 w-px bg-white/20"></div>
+        <span class="text-xs font-semibold text-emerald-400 flex items-center gap-1">
+          <span class="material-symbols-outlined text-sm">badge</span> Official Company Card
+        </span>
+      </div>
+
+      <div class="flex items-center gap-2.5">
+        <button onclick="window.print()" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs shadow-lg shadow-emerald-900/40 transition-all hover:scale-105">
+          <span class="material-symbols-outlined text-base">print</span>
+          <span>Print / Save PDF (3.5" × 2")</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Card Showcase Area -->
+  <main class="flex-1 max-w-6xl w-full mx-auto px-4 py-8 sm:py-12 flex flex-col items-center justify-center">
+
+    <div class="no-print text-center mb-8 max-w-xl">
+      <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-bold uppercase tracking-wider mb-3">
+        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+        Print-Ready Dimensions: 3.5" × 2.0"
+      </span>
+      <h1 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">1991 Group of Companies</h1>
+      <p class="text-slate-400 text-xs sm:text-sm mt-1.5">Official General Company Visiting Card with high-resolution scannable QR Code and Dual Headquarters details.</p>
+    </div>
+
+    <!-- Cards Grid (Both Front and Back) -->
+    <div class="print-page flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12 w-full">
+
+      <!-- ========================================== -->
+      <!-- CARD FRONT: Corporate Luxury Executive     -->
+      <!-- ========================================== -->
+      <div class="flex flex-col items-center">
+        <span class="no-print text-xs font-bold text-slate-400 uppercase tracking-widest mb-2 flex items-center gap-1">
+          <span class="material-symbols-outlined text-sm text-emerald-400">credit_card</span> Front Side
+        </span>
+
+        <div class="business-card bg-gradient-to-br from-[#0a2540] via-[#081f36] to-[#04101e] text-white rounded-2xl p-5 shadow-2xl border border-white/10 flex flex-col justify-between">
+          
+          <!-- Background Geometric Accents -->
+          <div class="absolute -top-12 -right-12 w-32 h-32 rounded-full bg-emerald-500/10 blur-2xl pointer-events-none"></div>
+          <div class="absolute -bottom-10 -left-10 w-28 h-28 rounded-full bg-cyan-500/10 blur-2xl pointer-events-none"></div>
+
+          <!-- Top Row: Logo & Badges -->
+          <div class="flex items-start justify-between relative z-10">
+            <div class="flex items-center gap-2.5">
+              <div class="w-9 h-9 rounded-xl bg-white p-1 flex items-center justify-center shadow-md">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLWKOVuvXdEYtj8knT3dh-jkOItQSWQ4zB-VCt7iqMPLtUSXosToOYq1ct7SmTeU_FM2QZco-9v48Mts2bfZYkAyA6NqBfMnmZPYzt3aMDp7GZkW6WfnGoOYOUynh80xHqSoAAFQgHH7V7v2Z6AjEZejfC8Xkm5RiamqRcabqz6nvPJN844La8gq2gvdDkcTMYlJEhIWxLWCO667OdHXcXi55o05tQor8YPdYgZ9m5bd-urZk-C6naOqaiaX06XGr7tw0" alt="1991 Group Logo" class="w-full h-full object-contain">
+              </div>
+              <div>
+                <div class="text-[14px] font-black tracking-tight text-white leading-tight">1991 GROUP</div>
+                <div class="text-[7.5px] font-bold text-emerald-400 uppercase tracking-wider">OF COMPANIES</div>
+              </div>
+            </div>
+
+            <div class="text-right">
+              <span class="inline-block px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-[7px] font-extrabold uppercase tracking-wider">
+                ISO 9001:2015
+              </span>
+            </div>
+          </div>
+
+          <!-- Middle Row: Company Headline -->
+          <div class="relative z-10 my-auto">
+            <div class="text-[12px] font-extrabold tracking-tight text-white leading-snug">
+              Overseas Recruitment &amp; Global Mobility
+            </div>
+            <p class="text-[8px] text-slate-300 font-medium mt-0.5 leading-tight">
+              Licensed International Manpower • Legal Work Permits • Zero Advance Fees
+            </p>
+          </div>
+
+          <!-- Bottom Row: Dual Corridor Flags & Website -->
+          <div class="relative z-10 pt-2 border-t border-white/10 flex items-center justify-between text-[7.5px] font-semibold text-slate-300">
+            <div class="flex items-center gap-2">
+              <span class="flex items-center gap-1 text-emerald-400 font-bold">
+                <span class="material-symbols-outlined text-[10px]">flight_takeoff</span>
+                <span>Europe • UAE • Gulf</span>
+              </span>
+            </div>
+            <div class="text-white font-bold tracking-wide">
+              1991groupofcompanies.com
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========================================== -->
+      <!-- CARD BACK: Dual HQ, Contact & Active QR     -->
+      <!-- ========================================== -->
+      <div class="flex flex-col items-center">
+        <span class="no-print text-xs font-bold text-slate-400 uppercase tracking-widest mb-2 flex items-center gap-1">
+          <span class="material-symbols-outlined text-sm text-cyan-400">qr_code_2</span> Back Side (With QR Code)
+        </span>
+
+        <div class="business-card bg-white text-slate-900 rounded-2xl p-4 shadow-2xl border border-slate-200 flex flex-col justify-between">
+          
+          <!-- Top Row: Dual Office Addresses -->
+          <div class="grid grid-cols-2 gap-2 text-[7px] leading-tight">
+            <!-- Dubai HQ -->
+            <div class="border-r border-slate-200 pr-1.5">
+              <div class="font-extrabold text-[#0a2540] uppercase flex items-center gap-0.5 text-[7.5px]">
+                <span class="material-symbols-outlined text-[9px] text-cyan-600">apartment</span> Dubai Corporate HQ
+              </div>
+              <p class="text-slate-600 mt-0.5 leading-snug">
+                Office No. 1, 1st Floor (Amer Office),<br>
+                Room 305, Al Noor 3, Al Mankhool,<br>
+                Near Metro Exit 4, Dubai, UAE
+              </p>
+              <div class="font-bold text-slate-900 mt-0.5 flex items-center gap-0.5">
+                <span class="material-symbols-outlined text-[8px] text-slate-500">call</span> +971 55 569 4504
+              </div>
+            </div>
+
+            <!-- Vizag India HQ -->
+            <div class="pl-0.5">
+              <div class="font-extrabold text-[#0a2540] uppercase flex items-center gap-0.5 text-[7.5px]">
+                <span class="material-symbols-outlined text-[9px] text-emerald-600">location_city</span> Vizag Operations HQ
+              </div>
+              <p class="text-slate-600 mt-0.5 leading-snug">
+                Near Lorven Hotel, Health City,<br>
+                Arilova, Visakhapatnam (Vizag),<br>
+                Andhra Pradesh - 530040, India
+              </p>
+              <div class="font-bold text-slate-900 mt-0.5 flex items-center gap-0.5">
+                <span class="material-symbols-outlined text-[8px] text-slate-500">call</span> +91 83413 01490
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Row: High Resolution Scannable QR Code + Contact Strip -->
+          <div class="pt-2 border-t border-slate-200 flex items-center justify-between gap-2">
+            
+            <!-- Left Info Details -->
+            <div class="space-y-0.5 text-[7px]">
+              <div class="flex items-center gap-1 font-semibold text-slate-700">
+                <span class="material-symbols-outlined text-[9px] text-emerald-600">chat</span>
+                <span>WhatsApp: +91 83413 01490</span>
+              </div>
+              <div class="flex items-center gap-1 font-semibold text-slate-700">
+                <span class="material-symbols-outlined text-[9px] text-cyan-600">mail</span>
+                <span>1991groups@gmail.com</span>
+              </div>
+              <div class="flex items-center gap-1 font-bold text-[#0a2540] pt-0.5">
+                <span class="material-symbols-outlined text-[9px] text-emerald-600">globe</span>
+                <span>https://1991groupofcompanies.com</span>
+              </div>
+            </div>
+
+            <!-- Right QR Code (Scannable to https://1991groupofcompanies.com) -->
+            <div class="flex flex-col items-center flex-shrink-0">
+              <div class="w-16 h-16 p-1 bg-white border-2 border-[#0a2540] rounded-lg shadow-sm flex items-center justify-center">
+                <img 
+                  src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https%3A%2F%2F1991groupofcompanies.com&color=0a2540&bgcolor=ffffff&margin=1" 
+                  alt="Scan to visit 1991groupofcompanies.com" 
+                  class="w-full h-full object-contain"
+                >
+              </div>
+              <span class="text-[6px] font-black uppercase tracking-wider text-slate-600 mt-0.5">SCAN TO VISIT</span>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Print Instructions Helper (Hidden on Print) -->
+    <div class="no-print mt-10 max-w-lg mx-auto p-4 rounded-2xl bg-white/5 border border-white/10 text-slate-300 text-xs">
+      <div class="flex items-start gap-2.5">
+        <span class="material-symbols-outlined text-emerald-400 text-lg flex-shrink-0">info</span>
+        <div>
+          <span class="font-bold text-white block mb-0.5">Printing Instructions:</span>
+          <ul class="list-disc list-inside space-y-1 text-slate-300 text-[11px]">
+            <li>Click <strong>Print / Save PDF</strong> button above or press <kbd class="px-1.5 py-0.5 rounded bg-white/10 text-[10px] font-mono">Ctrl + P</kbd>.</li>
+            <li>In the print preview, select <strong>Save as PDF</strong> or choose your Card Printer.</li>
+            <li>Set <strong>Margins: None</strong> and check <strong>Background graphics</strong> to preserve the colors.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Screen Footer (Hidden on Print) -->
+  <footer class="no-print border-t border-white/10 py-4 text-center text-xs text-slate-400">
+    <p>© 2026 1991 Group of Companies. All Rights Reserved. • <a href="https://1991groupofcompanies.com" class="text-emerald-400 hover:underline">1991groupofcompanies.com</a></p>
+  </footer>
+
+</body>
+</html>
