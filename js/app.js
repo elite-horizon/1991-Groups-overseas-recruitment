@@ -378,6 +378,18 @@ function renderLeadership() {
       `;
     }
 
+    let cardAnchor = 'all';
+    if (leader.name.toLowerCase().includes('kishan')) cardAnchor = 'kishan';
+    else if (leader.name.toLowerCase().includes('priyanka')) cardAnchor = 'priyanka';
+    else if (leader.name.toLowerCase().includes('kalam')) cardAnchor = 'kalam';
+
+    const cardBtn = `
+      <a class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold transition-all border border-slate-200 shadow-sm" href="card.html#card-${cardAnchor}" target="_blank" title="View & Print Visiting Card">
+        <span class="material-symbols-outlined text-[15px] text-emerald-600">badge</span>
+        <span>Visiting Card</span>
+      </a>
+    `;
+
     return `
       <div class="rounded-3xl p-5 sm:p-6 bg-white border border-slate-200 hover:border-emerald-500 transition-all shadow-sm flex flex-col sm:flex-row lg:flex-col xl:flex-row gap-5 items-center sm:items-start lg:items-center xl:items-start text-center sm:text-left lg:text-center xl:text-left group hover:shadow-xl">
         <div class="relative flex-shrink-0">
@@ -401,8 +413,9 @@ function renderLeadership() {
               <span class="px-2.5 py-1 rounded-lg ${i === 0 ? 'bg-slate-100 border border-slate-200 text-slate-700' : 'bg-emerald-50 text-emerald-800 border border-emerald-200'} text-[11px] font-semibold">${t}</span>
             `).join('')}
           </div>
-          <div class="pt-3 flex justify-center sm:justify-start lg:justify-center xl:justify-start">
+          <div class="pt-3 flex flex-wrap gap-2 justify-center sm:justify-start lg:justify-center xl:justify-start items-center">
             ${actionBtn}
+            ${cardBtn}
           </div>
         </div>
       </div>
